@@ -1,0 +1,776 @@
+[{
+	"pathName": "papua_new_guinea",
+	"accept": ["Papua New Guinea"]
+},
+{
+	"pathName": "mexico",
+	"accept": ["Mexico"]
+},
+{
+	"pathName": "estonia",
+	"accept": ["Estonia"]
+},
+{
+	"pathName": "algeria",
+	"accept": ["Algeria"]
+},
+{
+	"pathName": "morocco",
+	"accept": ["Morocco"]
+},
+{
+	"pathName": "mauritania",
+	"accept": ["Mauritania"]
+},
+{
+	"pathName": "senegal",
+	"accept": ["Senegal"]
+},
+{
+	"pathName": "gambia",
+	"accept": ["Gambia"]
+},
+{
+	"pathName": "guinea_bissau",
+	"accept": ["Guinea-Bissau"]
+},
+{
+	"pathName": "sierra_leone",
+	"accept": ["Sierra Leone"]
+},
+{
+	"pathName": "liberia",
+	"accept": ["Liberia"]
+},
+{
+	"pathName": "cote_divoire",
+	"accept": ["Republic of Côte d'Ivoire", "republic of cote d'ivoire", "cote d'ivoire", "ivory coast"]
+},
+{
+	"pathName": "mali",
+	"accept": ["Mali"]
+},
+{
+	"pathName": "burkina_faso",
+	"accept": ["Burkina Faso"]
+},
+{
+	"pathName": "niger",
+	"accept": ["Niger"]
+},
+{
+	"pathName": "ghana",
+	"accept": ["Ghana"]
+},
+{
+	"pathName": "togo",
+	"accept": ["Togo"]
+},
+{
+	"pathName": "benin",
+	"accept": ["Benin"]
+},
+{
+	"pathName": "nigeria",
+	"accept": ["Nigeria"]
+},
+{
+	"pathName": "tunisia",
+	"accept": ["Tunisia"]
+},
+{
+	"pathName": "libya",
+	"accept": ["Libya"]
+},
+{
+	"pathName": "egypt",
+	"accept": ["Egypt"]
+},
+{
+	"pathName": "chad",
+	"accept": ["Chad"]
+},
+{
+	"pathName": "sudan",
+	"accept": ["Sudan"]
+},
+{
+	"pathName": "south_sudan",
+	"accept": ["South Sudan"]
+},
+{
+	"pathName": "cameroon",
+	"accept": ["Cameroon"]
+},
+{
+	"pathName": "eritrea",
+	"accept": ["Eritrea"]
+},
+{
+	"pathName": "djibouti",
+	"accept": ["Djibouti"]
+},
+{
+	"pathName": "ethiopia",
+	"accept": ["Ethiopia"]
+},
+{
+	"pathName": "somalia",
+	"accept": ["Somlia"]
+},
+{
+	"pathName": "central_african_republic",
+	"accept": ["Central African Republic", "Republique centrafricaine", "centrafrique"]
+},
+{
+	"pathName": "sao_tome_and_principe",
+	"accept": ["Sao Tome and Principe", "sao tome"]
+},
+{
+	"pathName": "gabon",
+	"accept": ["Gabon"]
+},
+{
+	"pathName": "equatorial_guinea",
+	"accept": ["Equatorial Guinea"]
+},
+{
+	"pathName": "republic_of_congo",
+	"accept": ["Republic of the Congo", "roc", "republic of congo"]
+},
+{
+	"pathName": "drc",
+	"accept": ["Democratic Republic of the Congo", "drc", "democratic republic of congo"]
+},
+{
+	"pathName": "rwanda",
+	"accept": ["Rwanda"]
+},
+{
+	"pathName": "burundi",
+	"accept": ["Burundi"]
+},
+{
+	"pathName": "uganda",
+	"accept": ["Uganda"]
+},
+{
+	"pathName": "kenya",
+	"accept": ["Kenya"]
+},
+{
+	"pathName": "tanzania",
+	"accept": ["Tanzania"]
+},
+{
+	"pathName": "zambia",
+	"accept": ["Zambia"]
+},
+{
+	"pathName": "angola",
+	"accept": ["Angola"]
+},
+{
+	"pathName": "malawi",
+	"accept": ["Malawi"]
+},
+{
+	"pathName": "mozambique",
+	"accept": ["Mozambique"]
+},
+{
+	"pathName": "zimbabwe",
+	"accept": ["Zimbabwe"]
+},
+{
+	"pathName": "namibia",
+	"accept": ["Namibia"]
+},
+{
+	"pathName": "botswana",
+	"accept": ["Botswana"]
+},
+{
+	"pathName": "swaziland",
+	"accept": ["Swaziland"]
+},
+{
+	"pathName": "lesotho",
+	"accept": ["Lesotho"]
+},
+{
+	"pathName": "south_africa",
+	"accept": ["South Africa"]
+},
+{
+	"pathName": "australia",
+	"accept": ["Australia"]
+},
+{
+	"pathName": "new_zealand",
+	"accept": ["New Zealand"]
+},
+{
+	"pathName": "tonga",
+	"accept": ["Tonga"]
+},
+{
+	"pathName": "tuvalu",
+	"accept": ["Tuvalu"]
+},
+{
+	"pathName": "samoa",
+	"accept": ["Samoa"]
+},
+{
+	"pathName": "kiribati",
+	"accept": ["Kiribati"]
+},
+{
+	"pathName": "nauru",
+	"accept": ["Nauru"]
+},
+{
+	"pathName": "micronesia",
+	"accept": ["Federated States of Micronesia","micronesia"]
+},
+{
+	"pathName": "brunei",
+	"accept": ["Brunei"]
+},
+{
+	"pathName": "indonesia",
+	"accept": ["Indonesia"]
+},
+{
+	"pathName": "east_timor",
+	"accept": ["East Timor"]
+},
+{
+	"pathName": "solomon_islands",
+	"accept": ["Solomon Islands"]
+},
+{
+	"pathName": "vanuatu",
+	"accept": ["Vanuatu"]
+},
+{
+	"pathName": "fiji",
+	"accept": ["Fiji"]
+},
+{
+	"pathName": "marshall_islands",
+	"accept": ["Marshall Islands"]
+},
+{
+	"pathName": "philippines",
+	"accept": ["Philippines"]
+},
+{
+	"pathName": "palau",
+	"accept": ["Palau"]
+},
+{
+	"pathName": "taiwan",
+	"accept": ["Taiwan"]
+},
+{
+	"pathName": "japan",
+	"accept": ["Japan"]
+},
+{
+	"pathName": "mauritius",
+	"accept": ["Mauritius"]
+},
+{
+	"pathName": "madagascar",
+	"accept": ["Madagascar"]
+},
+{
+	"pathName": "comoros",
+	"accept": ["Comoros"]
+},
+{
+	"pathName": "seychelles",
+	"accept": ["Seychelles"]
+},
+{
+	"pathName": "maldives",
+	"accept": ["Maldives"]
+},
+{
+	"pathName": "cape_verde",
+	"accept": ["Cape Verde"]
+},
+{
+	"pathName": "dominica",
+	"accept": ["Dominica"]
+},
+{
+	"pathName": "antigua",
+	"accept": ["Antigua and Barbuda", "antigua", "barbuda"]
+},
+{
+	"pathName": "st_lucia",
+	"accept": ["Saint Lucia", "st lucia", "st. lucia"]
+},
+{
+	"pathName": "st_vincent",
+	"accept": ["Saint Vincent and the Grenadines"]
+},
+{
+	"pathName": "st_kitts",
+	"accept": ["Saint Kitts", "st kitts", "st. kitts", "saint christopher island", "st christopher island"]
+},
+{
+	"pathName": "grenada",
+	"accept": ["Grenada"]
+},
+{
+	"pathName": "trinidad",
+	"accept": ["Trinidad"]
+},
+{
+	"pathName": "dominican_republic",
+	"accept": ["Dominican Republic"]
+},
+{
+	"pathName": "haiti",
+	"accept": ["Haiti"]
+},
+{
+	"pathName": "iceland",
+	"accept": ["Iceland"]
+},
+{
+	"pathName": "sri_lanka",
+	"accept": ["Sri Lanka"]
+},
+{
+	"pathName": "cuba",
+	"accept": ["Cuba"]
+},
+{
+	"pathName": "bahamas",
+	"accept": ["Bahamas"]
+},
+{
+	"pathName": "barbados",
+	"accept": ["Barbados"]
+},
+{
+	"pathName": "jamaica",
+	"accept": ["Jamaica"]
+},
+{
+	"pathName": "canada",
+	"accept": ["Canada"]
+},
+{
+	"pathName": "usa",
+	"accept": ["United States of America", "usa", "united states", "america"]
+},
+{
+	"pathName": "guatemala",
+	"accept": ["Guatemala"]
+},
+{
+	"pathName": "honduras",
+	"accept": ["Honduras"]
+},
+{
+	"pathName": "el_salvador",
+	"accept": ["El Salvador"]
+},
+{
+	"pathName": "nicaragua",
+	"accept": ["Nicaragua"]
+},
+{
+	"pathName": "costa_rica",
+	"accept": ["Costa Rica"]
+},
+{
+	"pathName": "panama",
+	"accept": ["Panama"]
+},
+{
+	"pathName": "colombia",
+	"accept": ["Colombia"]
+},
+{
+	"pathName": "venezuela",
+	"accept": ["Venezuela"]
+},
+{
+	"pathName": "guyana",
+	"accept": ["Guyana"]
+},
+{
+	"pathName": "suriname",
+	"accept": ["Suriname"]
+},
+{
+	"pathName": "ecuador",
+	"accept": ["Ecuador"]
+},
+{
+	"pathName": "peru",
+	"accept": ["Peru"]
+},
+{
+	"pathName": "bolivia",
+	"accept": ["Bolivia"]
+},
+{
+	"pathName": "paraguay",
+	"accept": ["Paraguay"]
+},
+{
+	"pathName": "uruguay",
+	"accept": ["Uruguay"]
+},
+{
+	"pathName": "argentina",
+	"accept": ["Argentina"]
+},
+{
+	"pathName": "chile",
+	"accept": ["Chile"]
+},
+{
+	"pathName": "brazil",
+	"accept": ["Brazil"]
+},
+{
+	"pathName": "belize",
+	"accept": ["Belize"]
+},
+{
+	"pathName": "russia",
+	"accept": ["Russia"]
+},
+{
+	"pathName": "china",
+	"accept": ["China"]
+},
+{
+	"pathName": "mongolia",
+	"accept": ["Mongolia"]
+},
+{
+	"pathName": "north_korea",
+	"accept": ["Democratic People's Republic of Korea", "North Korea", "dprk"]
+},
+{
+	"pathName": "south_korea",
+	"accept": ["South Korea"]
+},
+{
+	"pathName": "kazakhstan",
+	"accept": ["Kazakhstan"]
+},
+{
+	"pathName": "turkmenistan",
+	"accept": ["Turkmenistan"]
+},
+{
+	"pathName": "uzbekistan",
+	"accept": ["Uzbekistan"]
+},
+{
+	"pathName": "tajikistan",
+	"accept": ["Tajikistan"]
+},
+{
+	"pathName": "kyrgyzstan",
+	"accept": ["Kyrgyzstan"]
+},
+{
+	"pathName": "afghanistan",
+	"accept": ["Afghanistan"]
+},
+{
+	"pathName": "pakistan",
+	"accept": ["Pakistan"]
+},
+{
+	"pathName": "india",
+	"accept": ["India"]
+},
+{
+	"pathName": "nepal",
+	"accept": ["Nepal"]
+},
+{
+	"pathName": "bhutan",
+	"accept": ["Bhutan"]
+},
+{
+	"pathName": "bangladesh",
+	"accept": ["Bangladesh"]
+},
+{
+	"pathName": "burma",
+	"accept": ["Burma"]
+},
+{
+	"pathName": "thailand",
+	"accept": ["Thailand"]
+},
+{
+	"pathName": "malaysia",
+	"accept": ["Malaysia"]
+},
+{
+	"pathName": "singapore",
+	"accept": ["Singapore"]
+},
+{
+	"pathName": "cambodia",
+	"accept": ["Cambodia"]
+},
+{
+	"pathName": "laos",
+	"accept": ["Laos"]
+},
+{
+	"pathName": "vietnam",
+	"accept": ["Vietnam"]
+},
+{
+	"pathName": "georgia",
+	"accept": ["Georgia"]
+},
+{
+	"pathName": "armenia",
+	"accept": ["Armenia"]
+},
+{
+	"pathName": "azerbaijan",
+	"accept": ["Azerbaijan"]
+},
+{
+	"pathName": "iran",
+	"accept": ["Iran"]
+},
+{
+	"pathName": "turkey",
+	"accept": ["Turkey"]
+},
+{
+	"pathName": "yemen",
+	"accept": ["Yemen"]
+},
+{
+	"pathName": "oman",
+	"accept": ["Oman"]
+},
+{
+	"pathName": "uae",
+	"accept": ["United Arab Emirates", "uae", "emirates"]
+},
+{
+	"pathName": "qatar",
+	"accept": ["Qatar"]
+},
+{
+	"pathName": "bahrain",
+	"accept": ["Bahrain"]
+},
+{
+	"pathName": "kuwait",
+	"accept": ["Kuwait"]
+},
+{
+	"pathName": "saudi",
+	"accept": ["Saudi Arabia"]
+},
+{
+	"pathName": "syria",
+	"accept": ["Syria"]
+},
+{
+	"pathName": "iraq",
+	"accept": ["Iraq"]
+},
+{
+	"pathName": "jordan",
+	"accept": ["Jordan"]
+},
+{
+	"pathName": "lebanon",
+	"accept": ["Lebanon"]
+},
+{
+	"pathName": "israel",
+	"accept": ["Israel"]
+},
+{
+	"pathName": "cyprus",
+	"accept": ["Cyprus"]
+},
+{
+	"pathName": "norway",
+	"accept": ["Norway"]
+},
+{
+	"pathName": "britain",
+	"accept": ["United Kingdom", "uk", "britain", "great britain"]
+},
+{
+	"pathName": "ireland",
+	"accept": ["Republic of Ireland", "ireland", "eire"]
+},
+{
+	"pathName": "sweden",
+	"accept": ["Sweden"]
+},
+{
+	"pathName": "finland",
+	"accept": ["Finland"]
+},
+{
+	"pathName": "lithuania",
+	"accept": ["Lithuania"]
+},
+{
+	"pathName": "latvia",
+	"accept": ["Latvia"]
+},
+{
+	"pathName": "belarus",
+	"accept": ["Belarus"]
+},
+{
+	"pathName": "poland",
+	"accept": ["Poland"]
+},
+{
+	"pathName": "spain",
+	"accept": ["Spain"]
+},
+{
+	"pathName": "andorra",
+	"accept": ["Andorra"]
+},
+{
+	"pathName": "portugal",
+	"accept": ["Portugal"]
+},
+{
+	"pathName": "france",
+	"accept": ["France"]
+},
+{
+	"pathName": "monaco",
+	"accept": ["Monaco"]
+},
+{
+	"pathName": "netherlands",
+	"accept": ["The Netherlands", "netherlands", "holland"]
+},
+{
+	"pathName": "belgium",
+	"accept": ["Belgium"]
+},
+{
+	"pathName": "luxembourg",
+	"accept": ["Luxembourg"]
+},
+{
+	"pathName": "germany",
+	"accept": ["Germany"]
+},
+{
+	"pathName": "denmark",
+	"accept": ["Denmark"]
+},
+{
+	"pathName": "switzerland",
+	"accept": ["Switzerland"]
+},
+{
+	"pathName": "liechtenstein",
+	"accept": ["Liechtenstein"]
+},
+{
+	"pathName": "czech",
+	"accept": ["Czech Republic"]
+},
+{
+	"pathName": "slovakia",
+	"accept": ["Slovakia"]
+},
+{
+	"pathName": "austria",
+	"accept": ["Austria"]
+},
+{
+	"pathName": "hungary",
+	"accept": ["Hungary"]
+},
+{
+	"pathName": "slovenia",
+	"accept": ["Slovenia"]
+},
+{
+	"pathName": "croatia",
+	"accept": ["Croatia"]
+},
+{
+	"pathName": "bosnia",
+	"accept": ["Bosnia and Herzegovina", "bosnia"]
+},
+{
+	"pathName": "san_marino",
+	"accept": ["San Marino"]
+},
+{
+	"pathName": "vatican_city",
+	"accept": ["Vatican City"]
+},
+{
+	"pathName": "italy",
+	"accept": ["Italy"]
+},
+{
+	"pathName": "malta",
+	"accept": ["Malta"]
+},
+{
+	"pathName": "ukraine",
+	"accept": ["Ukraine"]
+},
+{
+	"pathName": "moldova",
+	"accept": ["Moldova"]
+},
+{
+	"pathName": "romania",
+	"accept": ["Romania"]
+},
+{
+	"pathName": "serbia",
+	"accept": ["Serbia"]
+},
+{
+	"pathName": "montenegro",
+	"accept": ["Montenegro"]
+},
+{
+	"pathName": "bulgaria",
+	"accept": ["Bulgaria"]
+},
+{
+	"pathName": "albania",
+	"accept": ["Albania"]
+},
+{
+	"pathName": "macedonia",
+	"accept": ["Macedonia"]
+},
+{
+	"pathName": "greece",
+	"accept": ["Greece"]
+}]
