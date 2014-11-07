@@ -4,9 +4,15 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Kalam:400,700);
 
 body {
 	background: #113550;
+	font-family: 'Kalam', cursive;
+	overflow: hidden;
 }
 
 .map-container {
@@ -14,27 +20,129 @@ body {
 }
 
 .country-text{
-    position: fixed;
-    bottom: 50px;
-    left: 50%;
-    width: 30%;
-    margin-left: -15%;
-    font-size: 2em;
-    line-height: 1.5em;
-    padding: 5px 20px;
-    background: rgba(255,255,255,0.5);
-    border: none;
-    border-radius: 2px;
-    text-align: center;
-    color: #FFF;
-    opacity: 0.6;
+	@include border-radius(2px);
+	position: fixed;
+	bottom: 50px;
+	left: 50vw;
+	width: 30vw;
+	margin-left: -15vw;
+	font-size: 2em;
+	line-height: 1.5em;
+	outline: none;
+	font-family: 'Kalam', cursive;
+	padding: 5px 20px;
+	background: rgba(255,255,255,0.5);
+	border: none;
+	text-align: center;
+	color: #FFF;
+	opacity: 0.6;
+}
+
+::-webkit-input-placeholder {
+	color: #ccc;
+}
+:-moz-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+::-moz-placeholder {
+	color: #ccc;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+   color: #ccc;
 }
 
 .scoreboard {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background: #eee;
-    padding: 20px;
-    z-index: 10;
+	@include box-sizing(border-box);
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	background: #eee;
+	padding: 5px 20px;
+	z-index: 10;
+	font-size: 0.8em;
+	line-height: 1.2em;
+
+	.country-list-container {
+		@include transition-property(height, padding);
+		@include transition-duration(0.5s);
+		overflow: hidden;
+		height: 0;
+		width: 1030px;
+		margin: 0 auto;
+
+		&.open {
+			height: 623px;
+			padding: 20px 0px;
+		}
+	}
+
+	.country-list {
+		float: left;
+		margin-right: 20px;
+		width: 100px;
+
+		.region-title {
+			font-size: 1.2em;
+			line-height: 1.2em;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		ul {
+			li.country-tile {
+				@include box-sizing(border-box);
+				@include border-radius(2px);
+				width: 100px;
+				margin-bottom: 2px;
+				margin-right: 10px;
+				float: left;
+				padding: 2px 5px;
+				min-height: 20px;
+				background: #fff;
+
+				&.guessed {
+					background: #87C5A0;
+					color: #fff;
+				}
+
+				span {
+					text-align: center;
+					display: block;
+					line-height: 16px;
+				}
+			}
+		}
+
+		&.double {
+			width: 220px;
+			margin-right: 10px;
+
+			.region-title {
+				margin-left: -10px;
+			}
+		}
+
+	}
+
+	
+}
+
+.score {
+	position: absolute;
+	bottom: -36px;
+	right: 60px;
+	background: #EEE;
+	padding: 10px 40px;
+	line-height: 1.5em;
+	font-size: 1em;
+	letter-spacing: 1px;
+	@include border-radius(0px 0px 2px 2px);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.last {
+	margin-right: 0px !important;
 }

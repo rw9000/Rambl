@@ -2,7 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+@import url(http://fonts.googleapis.com/css?family=Kalam:400,700);
+/* line 5, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,96 +25,207 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 body {
   background: #113550;
+  font-family: 'Kalam', cursive;
+  overflow: hidden;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 .map-container {
   margin: 30px auto;
 }
 
-/* line 16, ../sass/screen.scss */
-.country-text{
-    position: fixed;
-    bottom: 50px;
-    left: 50vw;
-    width: 30vw;
-    margin-left: -15vw;
-    font-size: 2em;
-    font-size: 3vmin;
-    line-height: 1.5em;
-    padding: 5px 20px;
-    background: rgba(255,255,255,0.5);
-    border: none;
-    border-radius: 2px;
-    text-align: center;
-    color: #FFF;
-    opacity: 0.6;
+/* line 22, ../sass/screen.scss */
+.country-text {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  position: fixed;
+  bottom: 50px;
+  left: 50vw;
+  width: 30vw;
+  margin-left: -15vw;
+  font-size: 2em;
+  line-height: 1.5em;
+  outline: none;
+  font-family: 'Kalam', cursive;
+  padding: 5px 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.6;
 }
 
+/* line 41, ../sass/screen.scss */
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+/* line 44, ../sass/screen.scss */
+:-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+/* line 48, ../sass/screen.scss */
+::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+/* line 52, ../sass/screen.scss */
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+/* line 56, ../sass/screen.scss */
 .scoreboard {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background: #eee;
-    padding: 20px;
-    z-index: 10;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background: #eee;
+  padding: 5px 20px;
+  z-index: 10;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+/* line 67, ../sass/screen.scss */
+.scoreboard .country-list-container {
+  -moz-transition-property: height, padding;
+  -o-transition-property: height, padding;
+  -webkit-transition-property: height, padding;
+  transition-property: height, padding;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  height: 0;
+  width: 1030px;
+  margin: 0 auto;
+}
+/* line 75, ../sass/screen.scss */
+.scoreboard .country-list-container.open {
+  height: 623px;
+  padding: 20px 0px;
+}
+/* line 81, ../sass/screen.scss */
+.scoreboard .country-list {
+  float: left;
+  margin-right: 20px;
+  width: 100px;
+}
+/* line 86, ../sass/screen.scss */
+.scoreboard .country-list .region-title {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 94, ../sass/screen.scss */
+.scoreboard .country-list ul li.country-tile {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  width: 100px;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  float: left;
+  padding: 2px 5px;
+  min-height: 20px;
+  background: #fff;
+}
+/* line 105, ../sass/screen.scss */
+.scoreboard .country-list ul li.country-tile.guessed {
+  background: #87C5A0;
+  color: #fff;
+}
+/* line 110, ../sass/screen.scss */
+.scoreboard .country-list ul li.country-tile span {
+  text-align: center;
+  display: block;
+  line-height: 16px;
+}
+/* line 118, ../sass/screen.scss */
+.scoreboard .country-list.double {
+  width: 220px;
+  margin-right: 10px;
+}
+/* line 122, ../sass/screen.scss */
+.scoreboard .country-list.double .region-title {
+  margin-left: -10px;
 }
 
+/* line 132, ../sass/screen.scss */
 .score {
-    position: absolute;
-    bottom: -36px;
-    right: 60px;
-    background: #EEE;
-    padding: 10px 40px;
-    line-height: 1.5em;
-    font-size: 2em;
-    font-size: 3vmin;
-    font-weight: bold;
-    cursor: pointer;
+  position: absolute;
+  bottom: -36px;
+  right: 60px;
+  background: #EEE;
+  padding: 10px 40px;
+  line-height: 1.5em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  -moz-border-radius: 0px 0px 2px 2px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px 0px 2px 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 146, ../sass/screen.scss */
+.last {
+  margin-right: 0px !important;
 }

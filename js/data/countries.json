@@ -1,776 +1,1164 @@
 [{
 	"pathName": "papua_new_guinea",
-	"accept": ["Papua New Guinea"]
+	"region" : "Oceania",
+	"names": ["Papua New Guinea"],
+	"guessed": false
 },
 {
 	"pathName": "mexico",
-	"accept": ["Mexico"]
+	"region" : "South America",
+	"names": ["Mexico"],
+	"guessed": false
 },
 {
 	"pathName": "estonia",
-	"accept": ["Estonia"]
+	"region" : "Europe",
+	"names": ["Estonia"],
+	"guessed": false
 },
 {
 	"pathName": "algeria",
-	"accept": ["Algeria"]
+	"region" : "Africa",
+	"names": ["Algeria"],
+	"guessed": false
 },
 {
 	"pathName": "morocco",
-	"accept": ["Morocco"]
+	"region" : "Africa",
+	"names": ["Morocco"],
+	"guessed": false
 },
 {
 	"pathName": "mauritania",
-	"accept": ["Mauritania"]
+	"region" : "Africa",
+	"names": ["Mauritania"],
+	"guessed": false
 },
 {
 	"pathName": "senegal",
-	"accept": ["Senegal"]
+	"region" : "Africa",
+	"names": ["Senegal"],
+	"guessed": false
 },
 {
 	"pathName": "gambia",
-	"accept": ["Gambia"]
+	"region" : "Africa",
+	"names": ["Gambia"],
+	"guessed": false
 },
 {
 	"pathName": "guinea_bissau",
-	"accept": ["Guinea-Bissau"]
+	"region" : "Africa",
+	"names": ["Guinea-Bissau"],
+	"guessed": false
 },
 {
 	"pathName": "sierra_leone",
-	"accept": ["Sierra Leone"]
+	"region" : "Africa",
+	"names": ["Sierra Leone"],
+	"guessed": false
 },
 {
 	"pathName": "liberia",
-	"accept": ["Liberia"]
+	"region" : "Africa",
+	"names": ["Liberia"],
+	"guessed": false
 },
 {
 	"pathName": "cote_divoire",
-	"accept": ["Republic of Côte d'Ivoire", "republic of cote d'ivoire", "cote d'ivoire", "ivory coast"]
+	"region" : "Africa",
+	"names": ["Côte d'Ivoire", "republic of côte d'ivoire", "côte d'ivoire", "republic of cote d'ivoire", "cote d'ivoire", "ivory coast"],
+	"guessed": false
 },
 {
 	"pathName": "mali",
-	"accept": ["Mali"]
+	"region" : "Africa",
+	"names": ["Mali"],
+	"guessed": false
 },
 {
 	"pathName": "burkina_faso",
-	"accept": ["Burkina Faso"]
+	"region" : "Africa",
+	"names": ["Burkina Faso"],
+	"guessed": false
 },
 {
 	"pathName": "niger",
-	"accept": ["Niger"]
+	"region" : "Africa",
+	"names": ["Niger"],
+	"guessed": false
 },
 {
 	"pathName": "ghana",
-	"accept": ["Ghana"]
+	"region" : "Africa",
+	"names": ["Ghana"],
+	"guessed": false
 },
 {
 	"pathName": "togo",
-	"accept": ["Togo"]
+	"region" : "Africa",
+	"names": ["Togo"],
+	"guessed": false
 },
 {
 	"pathName": "benin",
-	"accept": ["Benin"]
+	"region" : "Africa",
+	"names": ["Benin"],
+	"guessed": false
 },
 {
 	"pathName": "nigeria",
-	"accept": ["Nigeria"]
+	"region" : "Africa",
+	"names": ["Nigeria"],
+	"guessed": false
 },
 {
 	"pathName": "tunisia",
-	"accept": ["Tunisia"]
+	"region" : "Africa",
+	"names": ["Tunisia"],
+	"guessed": false
 },
 {
 	"pathName": "libya",
-	"accept": ["Libya"]
+	"region" : "Africa",
+	"names": ["Libya"],
+	"guessed": false
 },
 {
 	"pathName": "egypt",
-	"accept": ["Egypt"]
+	"region" : "Africa",
+	"names": ["Egypt"],
+	"guessed": false
 },
 {
 	"pathName": "chad",
-	"accept": ["Chad"]
+	"region" : "Africa",
+	"names": ["Chad"],
+	"guessed": false
 },
 {
 	"pathName": "sudan",
-	"accept": ["Sudan"]
+	"region" : "Africa",
+	"names": ["Sudan"],
+	"guessed": false
 },
 {
 	"pathName": "south_sudan",
-	"accept": ["South Sudan"]
+	"region" : "Africa",
+	"names": ["South Sudan"],
+	"guessed": false
 },
 {
 	"pathName": "cameroon",
-	"accept": ["Cameroon"]
+	"region" : "Africa",
+	"names": ["Cameroon"],
+	"guessed": false
 },
 {
 	"pathName": "eritrea",
-	"accept": ["Eritrea"]
+	"region" : "Africa",
+	"names": ["Eritrea"],
+	"guessed": false
 },
 {
 	"pathName": "djibouti",
-	"accept": ["Djibouti"]
+	"region" : "Africa",
+	"names": ["Djibouti"],
+	"guessed": false
 },
 {
 	"pathName": "ethiopia",
-	"accept": ["Ethiopia"]
+	"region" : "Africa",
+	"names": ["Ethiopia"],
+	"guessed": false
 },
 {
 	"pathName": "somalia",
-	"accept": ["Somlia"]
+	"region" : "Africa",
+	"names": ["Somlia"],
+	"guessed": false
 },
 {
 	"pathName": "central_african_republic",
-	"accept": ["Central African Republic", "Republique centrafricaine", "centrafrique"]
+	"region" : "Africa",
+	"names": ["Central African Republic", "Republique centrafricaine", "centrafrique"],
+	"guessed": false
 },
 {
 	"pathName": "sao_tome_and_principe",
-	"accept": ["Sao Tome and Principe", "sao tome"]
+	"region" : "Africa",
+	"names": ["Sao Tome and Principe", "sao tome"],
+	"guessed": false
 },
 {
 	"pathName": "gabon",
-	"accept": ["Gabon"]
+	"region" : "Africa",
+	"names": ["Gabon"],
+	"guessed": false
 },
 {
 	"pathName": "equatorial_guinea",
-	"accept": ["Equatorial Guinea"]
+	"region" : "Africa",
+	"names": ["Equatorial Guinea"],
+	"guessed": false
 },
 {
 	"pathName": "republic_of_congo",
-	"accept": ["Republic of the Congo", "roc", "republic of congo"]
+	"region" : "Africa",
+	"names": ["Republic of the Congo", "roc", "republic of congo"],
+	"guessed": false
 },
 {
 	"pathName": "drc",
-	"accept": ["Democratic Republic of the Congo", "drc", "democratic republic of congo"]
+	"region" : "Africa",
+	"names": ["Democratic Republic of the Congo", "drc", "democratic republic of congo"],
+	"guessed": false
 },
 {
 	"pathName": "rwanda",
-	"accept": ["Rwanda"]
+	"region" : "Africa",
+	"names": ["Rwanda"],
+	"guessed": false
 },
 {
 	"pathName": "burundi",
-	"accept": ["Burundi"]
+	"region" : "Africa",
+	"names": ["Burundi"],
+	"guessed": false
 },
 {
 	"pathName": "uganda",
-	"accept": ["Uganda"]
+	"region" : "Africa",
+	"names": ["Uganda"],
+	"guessed": false
 },
 {
 	"pathName": "kenya",
-	"accept": ["Kenya"]
+	"region" : "Africa",
+	"names": ["Kenya"],
+	"guessed": false
 },
 {
 	"pathName": "tanzania",
-	"accept": ["Tanzania"]
+	"region" : "Africa",
+	"names": ["Tanzania"],
+	"guessed": false
 },
 {
 	"pathName": "zambia",
-	"accept": ["Zambia"]
+	"region" : "Africa",
+	"names": ["Zambia"],
+	"guessed": false
 },
 {
 	"pathName": "angola",
-	"accept": ["Angola"]
+	"region" : "Africa",
+	"names": ["Angola"],
+	"guessed": false
 },
 {
 	"pathName": "malawi",
-	"accept": ["Malawi"]
+	"region" : "Africa",
+	"names": ["Malawi"],
+	"guessed": false
 },
 {
 	"pathName": "mozambique",
-	"accept": ["Mozambique"]
+	"region" : "Africa",
+	"names": ["Mozambique"],
+	"guessed": false
 },
 {
 	"pathName": "zimbabwe",
-	"accept": ["Zimbabwe"]
+	"region" : "Africa",
+	"names": ["Zimbabwe"],
+	"guessed": false
 },
 {
 	"pathName": "namibia",
-	"accept": ["Namibia"]
+	"region" : "Africa",
+	"names": ["Namibia"],
+	"guessed": false
 },
 {
 	"pathName": "botswana",
-	"accept": ["Botswana"]
+	"region" : "Africa",
+	"names": ["Botswana"],
+	"guessed": false
 },
 {
 	"pathName": "swaziland",
-	"accept": ["Swaziland"]
+	"region" : "Africa",
+	"names": ["Swaziland"],
+	"guessed": false
 },
 {
 	"pathName": "lesotho",
-	"accept": ["Lesotho"]
+	"region" : "Africa",
+	"names": ["Lesotho"],
+	"guessed": false
 },
 {
 	"pathName": "south_africa",
-	"accept": ["South Africa"]
+	"region" : "Africa",
+	"names": ["South Africa"],
+	"guessed": false
 },
 {
 	"pathName": "australia",
-	"accept": ["Australia"]
+	"region" : "Oceania",
+	"names": ["Australia"],
+	"guessed": false
 },
 {
 	"pathName": "new_zealand",
-	"accept": ["New Zealand"]
+	"region" : "Oceania",
+	"names": ["New Zealand"],
+	"guessed": false
 },
 {
 	"pathName": "tonga",
-	"accept": ["Tonga"]
+	"region" : "Oceania",
+	"names": ["Tonga"],
+	"guessed": false
 },
 {
 	"pathName": "tuvalu",
-	"accept": ["Tuvalu"]
+	"region" : "Oceania",
+	"names": ["Tuvalu"],
+	"guessed": false
 },
 {
 	"pathName": "samoa",
-	"accept": ["Samoa"]
+	"region" : "Oceania",
+	"names": ["Samoa"],
+	"guessed": false
 },
 {
 	"pathName": "kiribati",
-	"accept": ["Kiribati"]
+	"region" : "Oceania",
+	"names": ["Kiribati"],
+	"guessed": false
 },
 {
 	"pathName": "nauru",
-	"accept": ["Nauru"]
+	"region" : "Oceania",
+	"names": ["Nauru"],
+	"guessed": false
 },
 {
 	"pathName": "micronesia",
-	"accept": ["Federated States of Micronesia","micronesia"]
+	"region" : "Oceania",
+	"names": ["Federated States of Micronesia","micronesia"],
+	"guessed": false
 },
 {
 	"pathName": "brunei",
-	"accept": ["Brunei"]
+	"region" : "Asia",
+	"names": ["Brunei"],
+	"guessed": false
 },
 {
 	"pathName": "indonesia",
-	"accept": ["Indonesia"]
+	"region" : "Asia",
+	"names": ["Indonesia"],
+	"guessed": false
 },
 {
 	"pathName": "east_timor",
-	"accept": ["East Timor"]
+	"region" : "Asia",
+	"names": ["East Timor"],
+	"guessed": false
 },
 {
 	"pathName": "solomon_islands",
-	"accept": ["Solomon Islands"]
+	"region" : "Oceania",
+	"names": ["Solomon Islands"],
+	"guessed": false
 },
 {
 	"pathName": "vanuatu",
-	"accept": ["Vanuatu"]
+	"region" : "Oceania",
+	"names": ["Vanuatu"],
+	"guessed": false
 },
 {
 	"pathName": "fiji",
-	"accept": ["Fiji"]
+	"region" : "Oceania",
+	"names": ["Fiji"],
+	"guessed": false
 },
 {
 	"pathName": "marshall_islands",
-	"accept": ["Marshall Islands"]
+	"region" : "Oceania",
+	"names": ["Marshall Islands"],
+	"guessed": false
 },
 {
 	"pathName": "philippines",
-	"accept": ["Philippines"]
+	"region" : "Asia",
+	"names": ["Philippines"],
+	"guessed": false
 },
 {
 	"pathName": "palau",
-	"accept": ["Palau"]
+	"region" : "Oceania",
+	"names": ["Palau"],
+	"guessed": false
 },
 {
 	"pathName": "taiwan",
-	"accept": ["Taiwan"]
+	"region" : "Asia",
+	"names": ["Taiwan"],
+	"guessed": false
 },
 {
 	"pathName": "japan",
-	"accept": ["Japan"]
+	"region" : "Asia",
+	"names": ["Japan"],
+	"guessed": false
 },
 {
 	"pathName": "mauritius",
-	"accept": ["Mauritius"]
+	"region" : "Africa",
+	"names": ["Mauritius"],
+	"guessed": false
 },
 {
 	"pathName": "madagascar",
-	"accept": ["Madagascar"]
+	"region" : "Africa",
+	"names": ["Madagascar"],
+	"guessed": false
 },
 {
 	"pathName": "comoros",
-	"accept": ["Comoros"]
+	"region" : "Africa",
+	"names": ["Comoros"],
+	"guessed": false
 },
 {
 	"pathName": "seychelles",
-	"accept": ["Seychelles"]
+	"region" : "Africa",
+	"names": ["Seychelles"],
+	"guessed": false
 },
 {
 	"pathName": "maldives",
-	"accept": ["Maldives"]
+	"region" : "Asia",
+	"names": ["Maldives"],
+	"guessed": false
 },
 {
 	"pathName": "cape_verde",
-	"accept": ["Cape Verde"]
+	"region" : "Africa",
+	"names": ["Cape Verde"],
+	"guessed": false
 },
 {
 	"pathName": "dominica",
-	"accept": ["Dominica"]
+	"region" : "Asia",
+	"names": ["Dominica"],
+	"guessed": false
 },
 {
 	"pathName": "antigua",
-	"accept": ["Antigua and Barbuda", "antigua", "barbuda"]
+	"region" : "North America",
+	"names": ["Antigua and Barbuda", "antigua", "barbuda"],
+	"guessed": false
 },
 {
 	"pathName": "st_lucia",
-	"accept": ["Saint Lucia", "st lucia", "st. lucia"]
+	"region" : "North America",
+	"names": ["Saint Lucia", "st lucia", "st. lucia"],
+	"guessed": false
 },
 {
 	"pathName": "st_vincent",
-	"accept": ["Saint Vincent and the Grenadines"]
+	"region" : "North America",
+	"names": ["Saint Vincent and the Grenadines", "st vincent", "st. vincent", "saint vincent"],
+	"guessed": false
 },
 {
 	"pathName": "st_kitts",
-	"accept": ["Saint Kitts", "st kitts", "st. kitts", "saint christopher island", "st christopher island"]
+	"region" : "North America",
+	"names": ["Saint Kitts", "st kitts", "st. kitts", "saint christopher island", "st christopher island"],
+	"guessed": false
 },
 {
 	"pathName": "grenada",
-	"accept": ["Grenada"]
+	"region" : "North America",
+	"names": ["Grenada"],
+	"guessed": false
 },
 {
 	"pathName": "trinidad",
-	"accept": ["Trinidad"]
+	"region" : "North America",
+	"names": ["Trinidad"],
+	"guessed": false
 },
 {
 	"pathName": "dominican_republic",
-	"accept": ["Dominican Republic"]
+	"region" : "North America",
+	"names": ["Dominican Republic"],
+	"guessed": false
 },
 {
 	"pathName": "haiti",
-	"accept": ["Haiti"]
+	"region" : "North America",
+	"names": ["Haiti"],
+	"guessed": false
 },
 {
 	"pathName": "iceland",
-	"accept": ["Iceland"]
+	"region" : "Europe",
+	"names": ["Iceland"],
+	"guessed": false
 },
 {
 	"pathName": "sri_lanka",
-	"accept": ["Sri Lanka"]
+	"region" : "Asia",
+	"names": ["Sri Lanka"],
+	"guessed": false
 },
 {
 	"pathName": "cuba",
-	"accept": ["Cuba"]
+	"region" : "North America",
+	"names": ["Cuba"],
+	"guessed": false
 },
 {
 	"pathName": "bahamas",
-	"accept": ["Bahamas"]
+	"region" : "North America",
+	"names": ["Bahamas"],
+	"guessed": false
 },
 {
 	"pathName": "barbados",
-	"accept": ["Barbados"]
+	"region" : "North America",
+	"names": ["Barbados"],
+	"guessed": false
 },
 {
 	"pathName": "jamaica",
-	"accept": ["Jamaica"]
+	"region" : "North America",
+	"names": ["Jamaica"],
+	"guessed": false
 },
 {
 	"pathName": "canada",
-	"accept": ["Canada"]
+	"region" : "North America",
+	"names": ["Canada"],
+	"guessed": false
 },
 {
 	"pathName": "usa",
-	"accept": ["United States of America", "usa", "united states", "america"]
+	"region" : "North America",
+	"names": ["United States of America", "usa", "united states", "america"],
+	"guessed": false
 },
 {
 	"pathName": "guatemala",
-	"accept": ["Guatemala"]
+	"region" : "South America",
+	"names": ["Guatemala"],
+	"guessed": false
 },
 {
 	"pathName": "honduras",
-	"accept": ["Honduras"]
+	"region" : "South America",
+	"names": ["Honduras"],
+	"guessed": false
 },
 {
 	"pathName": "el_salvador",
-	"accept": ["El Salvador"]
+	"region" : "South America",
+	"names": ["El Salvador"],
+	"guessed": false
 },
 {
 	"pathName": "nicaragua",
-	"accept": ["Nicaragua"]
+	"region" : "South America",
+	"names": ["Nicaragua"],
+	"guessed": false
 },
 {
 	"pathName": "costa_rica",
-	"accept": ["Costa Rica"]
+	"region" : "South America",
+	"names": ["Costa Rica"],
+	"guessed": false
 },
 {
 	"pathName": "panama",
-	"accept": ["Panama"]
+	"region" : "South America",
+	"names": ["Panama"],
+	"guessed": false
 },
 {
 	"pathName": "colombia",
-	"accept": ["Colombia"]
+	"region" : "South America",
+	"names": ["Colombia"],
+	"guessed": false
 },
 {
 	"pathName": "venezuela",
-	"accept": ["Venezuela"]
+	"region" : "South America",
+	"names": ["Venezuela"],
+	"guessed": false
 },
 {
 	"pathName": "guyana",
-	"accept": ["Guyana"]
+	"region" : "South America",
+	"names": ["Guyana"],
+	"guessed": false
 },
 {
 	"pathName": "suriname",
-	"accept": ["Suriname"]
+	"region" : "South America",
+	"names": ["Suriname"],
+	"guessed": false
 },
 {
 	"pathName": "ecuador",
-	"accept": ["Ecuador"]
+	"region" : "South America",
+	"names": ["Ecuador"],
+	"guessed": false
 },
 {
 	"pathName": "peru",
-	"accept": ["Peru"]
+	"region" : "South America",
+	"names": ["Peru"],
+	"guessed": false
 },
 {
 	"pathName": "bolivia",
-	"accept": ["Bolivia"]
+	"region" : "South America",
+	"names": ["Bolivia"],
+	"guessed": false
 },
 {
 	"pathName": "paraguay",
-	"accept": ["Paraguay"]
+	"region" : "South America",
+	"names": ["Paraguay"],
+	"guessed": false
 },
 {
 	"pathName": "uruguay",
-	"accept": ["Uruguay"]
+	"region" : "South America",
+	"names": ["Uruguay"],
+	"guessed": false
 },
 {
 	"pathName": "argentina",
-	"accept": ["Argentina"]
+	"region" : "South America",
+	"names": ["Argentina"],
+	"guessed": false
 },
 {
 	"pathName": "chile",
-	"accept": ["Chile"]
+	"region" : "South America",
+	"names": ["Chile"],
+	"guessed": false
 },
 {
 	"pathName": "brazil",
-	"accept": ["Brazil"]
+	"region" : "South America",
+	"names": ["Brazil"],
+	"guessed": false
 },
 {
 	"pathName": "belize",
-	"accept": ["Belize"]
+	"region" : "South America",
+	"names": ["Belize"],
+	"guessed": false
 },
 {
 	"pathName": "russia",
-	"accept": ["Russia"]
+	"region" : "Europe",
+	"names": ["Russia"],
+	"guessed": false
 },
 {
 	"pathName": "china",
-	"accept": ["China"]
+	"region" : "Asia",
+	"names": ["China"],
+	"guessed": false
 },
 {
 	"pathName": "mongolia",
-	"accept": ["Mongolia"]
+	"region" : "Asia",
+	"names": ["Mongolia"],
+	"guessed": false
 },
 {
 	"pathName": "north_korea",
-	"accept": ["Democratic People's Republic of Korea", "North Korea", "dprk"]
+	"region" : "Asia",
+	"names": ["North Korea", "Democratic People's Republic of Korea", "dprk"],
+	"guessed": false
 },
 {
 	"pathName": "south_korea",
-	"accept": ["South Korea"]
+	"region" : "Asia",
+	"names": ["South Korea"],
+	"guessed": false
 },
 {
 	"pathName": "kazakhstan",
-	"accept": ["Kazakhstan"]
+	"region" : "Asia",
+	"names": ["Kazakhstan"],
+	"guessed": false
 },
 {
 	"pathName": "turkmenistan",
-	"accept": ["Turkmenistan"]
+	"region" : "Asia",
+	"names": ["Turkmenistan"],
+	"guessed": false
 },
 {
 	"pathName": "uzbekistan",
-	"accept": ["Uzbekistan"]
+	"region" : "Asia",
+	"names": ["Uzbekistan"],
+	"guessed": false
 },
 {
 	"pathName": "tajikistan",
-	"accept": ["Tajikistan"]
+	"region" : "Asia",
+	"names": ["Tajikistan"],
+	"guessed": false
 },
 {
 	"pathName": "kyrgyzstan",
-	"accept": ["Kyrgyzstan"]
+	"region" : "Asia",
+	"names": ["Kyrgyzstan"],
+	"guessed": false
 },
 {
 	"pathName": "afghanistan",
-	"accept": ["Afghanistan"]
+	"region" : "Asia",
+	"names": ["Afghanistan"],
+	"guessed": false
 },
 {
 	"pathName": "pakistan",
-	"accept": ["Pakistan"]
+	"region" : "Asia",
+	"names": ["Pakistan"],
+	"guessed": false
 },
 {
 	"pathName": "india",
-	"accept": ["India"]
+	"region" : "Asia",
+	"names": ["India"],
+	"guessed": false
 },
 {
 	"pathName": "nepal",
-	"accept": ["Nepal"]
+	"region" : "Asia",
+	"names": ["Nepal"],
+	"guessed": false
 },
 {
 	"pathName": "bhutan",
-	"accept": ["Bhutan"]
+	"region" : "Asia",
+	"names": ["Bhutan"],
+	"guessed": false
 },
 {
 	"pathName": "bangladesh",
-	"accept": ["Bangladesh"]
+	"region" : "Asia",
+	"names": ["Bangladesh"],
+	"guessed": false
 },
 {
 	"pathName": "burma",
-	"accept": ["Burma"]
+	"region" : "Asia",
+	"names": ["Burma"],
+	"guessed": false
 },
 {
 	"pathName": "thailand",
-	"accept": ["Thailand"]
+	"region" : "Asia",
+	"names": ["Thailand"],
+	"guessed": false
 },
 {
 	"pathName": "malaysia",
-	"accept": ["Malaysia"]
+	"region" : "Asia",
+	"names": ["Malaysia"],
+	"guessed": false
 },
 {
 	"pathName": "singapore",
-	"accept": ["Singapore"]
+	"region" : "Asia",
+	"names": ["Singapore"],
+	"guessed": false
 },
 {
 	"pathName": "cambodia",
-	"accept": ["Cambodia"]
+	"region" : "Asia",
+	"names": ["Cambodia"],
+	"guessed": false
 },
 {
 	"pathName": "laos",
-	"accept": ["Laos"]
+	"region" : "Asia",
+	"names": ["Laos"],
+	"guessed": false
 },
 {
 	"pathName": "vietnam",
-	"accept": ["Vietnam"]
+	"region" : "Asia",
+	"names": ["Vietnam"],
+	"guessed": false
 },
 {
 	"pathName": "georgia",
-	"accept": ["Georgia"]
+	"region" : "Asia",
+	"names": ["Georgia"],
+	"guessed": false
 },
 {
 	"pathName": "armenia",
-	"accept": ["Armenia"]
+	"region" : "Asia",
+	"names": ["Armenia"],
+	"guessed": false
 },
 {
 	"pathName": "azerbaijan",
-	"accept": ["Azerbaijan"]
+	"region" : "Asia",
+	"names": ["Azerbaijan"],
+	"guessed": false
 },
 {
 	"pathName": "iran",
-	"accept": ["Iran"]
+	"region" : "Asia",
+	"names": ["Iran"],
+	"guessed": false
 },
 {
 	"pathName": "turkey",
-	"accept": ["Turkey"]
+	"region" : "Asia",
+	"names": ["Turkey"],
+	"guessed": false
 },
 {
 	"pathName": "yemen",
-	"accept": ["Yemen"]
+	"region" : "Asia",
+	"names": ["Yemen"],
+	"guessed": false
 },
 {
 	"pathName": "oman",
-	"accept": ["Oman"]
+	"region" : "Asia",
+	"names": ["Oman"],
+	"guessed": false
 },
 {
 	"pathName": "uae",
-	"accept": ["United Arab Emirates", "uae", "emirates"]
+	"region" : "Asia",
+	"names": ["United Arab Emirates", "uae", "emirates"],
+	"guessed": false
 },
 {
 	"pathName": "qatar",
-	"accept": ["Qatar"]
+	"region" : "Asia",
+	"names": ["Qatar"],
+	"guessed": false
 },
 {
 	"pathName": "bahrain",
-	"accept": ["Bahrain"]
+	"region" : "Asia",
+	"names": ["Bahrain"],
+	"guessed": false
 },
 {
 	"pathName": "kuwait",
-	"accept": ["Kuwait"]
+	"region" : "Asia",
+	"names": ["Kuwait"],
+	"guessed": false
 },
 {
 	"pathName": "saudi",
-	"accept": ["Saudi Arabia"]
+	"region" : "Asia",
+	"names": ["Saudi Arabia"],
+	"guessed": false
 },
 {
 	"pathName": "syria",
-	"accept": ["Syria"]
+	"region" : "Asia",
+	"names": ["Syria"],
+	"guessed": false
 },
 {
 	"pathName": "iraq",
-	"accept": ["Iraq"]
+	"region" : "Asia",
+	"names": ["Iraq"],
+	"guessed": false
 },
 {
 	"pathName": "jordan",
-	"accept": ["Jordan"]
+	"region" : "Asia",
+	"names": ["Jordan"],
+	"guessed": false
 },
 {
 	"pathName": "lebanon",
-	"accept": ["Lebanon"]
+	"region" : "Asia",
+	"names": ["Lebanon"],
+	"guessed": false
 },
 {
 	"pathName": "israel",
-	"accept": ["Israel"]
+	"region" : "Asia",
+	"names": ["Israel"],
+	"guessed": false
 },
 {
 	"pathName": "cyprus",
-	"accept": ["Cyprus"]
+	"region" : "Europe",
+	"names": ["Cyprus"],
+	"guessed": false
 },
 {
 	"pathName": "norway",
-	"accept": ["Norway"]
+	"region" : "Europe",
+	"names": ["Norway"],
+	"guessed": false
 },
 {
 	"pathName": "britain",
-	"accept": ["United Kingdom", "uk", "britain", "great britain"]
+	"region" : "Europe",
+	"names": ["United Kingdom", "uk", "britain", "great britain"],
+	"guessed": false
 },
 {
 	"pathName": "ireland",
-	"accept": ["Republic of Ireland", "ireland", "eire"]
+	"region" : "Europe",
+	"names": ["Republic of Ireland", "ireland", "eire"],
+	"guessed": false
 },
 {
 	"pathName": "sweden",
-	"accept": ["Sweden"]
+	"region" : "Europe",
+	"names": ["Sweden"],
+	"guessed": false
 },
 {
 	"pathName": "finland",
-	"accept": ["Finland"]
+	"region" : "Europe",
+	"names": ["Finland"],
+	"guessed": false
 },
 {
 	"pathName": "lithuania",
-	"accept": ["Lithuania"]
+	"region" : "Europe",
+	"names": ["Lithuania"],
+	"guessed": false
 },
 {
 	"pathName": "latvia",
-	"accept": ["Latvia"]
+	"region" : "Europe",
+	"names": ["Latvia"],
+	"guessed": false
 },
 {
 	"pathName": "belarus",
-	"accept": ["Belarus"]
+	"region" : "Europe",
+	"names": ["Belarus"],
+	"guessed": false
 },
 {
 	"pathName": "poland",
-	"accept": ["Poland"]
+	"region" : "Europe",
+	"names": ["Poland"],
+	"guessed": false
 },
 {
 	"pathName": "spain",
-	"accept": ["Spain"]
+	"region" : "Europe",
+	"names": ["Spain"],
+	"guessed": false
 },
 {
 	"pathName": "andorra",
-	"accept": ["Andorra"]
+	"region" : "Europe",
+	"names": ["Andorra"],
+	"guessed": false
 },
 {
 	"pathName": "portugal",
-	"accept": ["Portugal"]
+	"region" : "Europe",
+	"names": ["Portugal"],
+	"guessed": false
 },
 {
 	"pathName": "france",
-	"accept": ["France"]
+	"region" : "Europe",
+	"names": ["France"],
+	"guessed": false
 },
 {
 	"pathName": "monaco",
-	"accept": ["Monaco"]
+	"region" : "Europe",
+	"names": ["Monaco"],
+	"guessed": false
 },
 {
 	"pathName": "netherlands",
-	"accept": ["The Netherlands", "netherlands", "holland"]
+	"region" : "Europe",
+	"names": ["The Netherlands", "netherlands", "holland"],
+	"guessed": false
 },
 {
 	"pathName": "belgium",
-	"accept": ["Belgium"]
+	"region" : "Europe",
+	"names": ["Belgium"],
+	"guessed": false
 },
 {
 	"pathName": "luxembourg",
-	"accept": ["Luxembourg"]
+	"region" : "Europe",
+	"names": ["Luxembourg"],
+	"guessed": false
 },
 {
 	"pathName": "germany",
-	"accept": ["Germany"]
+	"region" : "Europe",
+	"names": ["Germany"],
+	"guessed": false
 },
 {
 	"pathName": "denmark",
-	"accept": ["Denmark"]
+	"region" : "Europe",
+	"names": ["Denmark"],
+	"guessed": false
 },
 {
 	"pathName": "switzerland",
-	"accept": ["Switzerland"]
+	"region" : "Europe",
+	"names": ["Switzerland"],
+	"guessed": false
 },
 {
 	"pathName": "liechtenstein",
-	"accept": ["Liechtenstein"]
+	"region" : "Europe",
+	"names": ["Liechtenstein"],
+	"guessed": false
 },
 {
 	"pathName": "czech",
-	"accept": ["Czech Republic"]
+	"region" : "Europe",
+	"names": ["Czech Republic"],
+	"guessed": false
 },
 {
 	"pathName": "slovakia",
-	"accept": ["Slovakia"]
+	"region" : "Europe",
+	"names": ["Slovakia"],
+	"guessed": false
 },
 {
 	"pathName": "austria",
-	"accept": ["Austria"]
+	"region" : "Europe",
+	"names": ["Austria"],
+	"guessed": false
 },
 {
 	"pathName": "hungary",
-	"accept": ["Hungary"]
+	"region" : "Europe",
+	"names": ["Hungary"],
+	"guessed": false
 },
 {
 	"pathName": "slovenia",
-	"accept": ["Slovenia"]
+	"region" : "Europe",
+	"names": ["Slovenia"],
+	"guessed": false
 },
 {
 	"pathName": "croatia",
-	"accept": ["Croatia"]
+	"region" : "Europe",
+	"names": ["Croatia"],
+	"guessed": false
 },
 {
 	"pathName": "bosnia",
-	"accept": ["Bosnia and Herzegovina", "bosnia"]
+	"region" : "Europe",
+	"names": ["Bosnia and Herzegovina", "bosnia"],
+	"guessed": false
 },
 {
 	"pathName": "san_marino",
-	"accept": ["San Marino"]
+	"region" : "Europe",
+	"names": ["San Marino"],
+	"guessed": false
 },
 {
 	"pathName": "vatican_city",
-	"accept": ["Vatican City"]
+	"region" : "Europe",
+	"names": ["Vatican City"],
+	"guessed": false
 },
 {
 	"pathName": "italy",
-	"accept": ["Italy"]
+	"region" : "Europe",
+	"names": ["Italy"],
+	"guessed": false
 },
 {
 	"pathName": "malta",
-	"accept": ["Malta"]
+	"region" : "Europe",
+	"names": ["Malta"],
+	"guessed": false
 },
 {
 	"pathName": "ukraine",
-	"accept": ["Ukraine"]
+	"region" : "Europe",
+	"names": ["Ukraine"],
+	"guessed": false
 },
 {
 	"pathName": "moldova",
-	"accept": ["Moldova"]
+	"region" : "Europe",
+	"names": ["Moldova"],
+	"guessed": false
 },
 {
 	"pathName": "romania",
-	"accept": ["Romania"]
+	"region" : "Europe",
+	"names": ["Romania"],
+	"guessed": false
 },
 {
 	"pathName": "serbia",
-	"accept": ["Serbia"]
+	"region" : "Europe",
+	"names": ["Serbia"],
+	"guessed": false
 },
 {
 	"pathName": "montenegro",
-	"accept": ["Montenegro"]
+	"region" : "Europe",
+	"names": ["Montenegro"],
+	"guessed": false
 },
 {
 	"pathName": "bulgaria",
-	"accept": ["Bulgaria"]
+	"region" : "Europe",
+	"names": ["Bulgaria"],
+	"guessed": false
 },
 {
 	"pathName": "albania",
-	"accept": ["Albania"]
+	"region" : "Europe",
+	"names": ["Albania"],
+	"guessed": false
 },
 {
 	"pathName": "macedonia",
-	"accept": ["Macedonia"]
+	"region" : "Europe",
+	"names": ["Macedonia"],
+	"guessed": false
 },
 {
 	"pathName": "greece",
-	"accept": ["Greece"]
+	"region" : "Europe",
+	"names": ["Greece"],
+	"guessed": false
 }]
