@@ -11,12 +11,14 @@
 
 body {
 	background: #113550;
+	color: #113550;
 	font-family: 'Kalam', cursive;
 	overflow: hidden;
 }
 
 .map-container {
 	margin: 30px auto;
+	width: 80vmax;
 }
 
 .country-text{
@@ -27,6 +29,7 @@ body {
 	width: 30vw;
 	margin-left: -15vw;
 	font-size: 2em;
+	font-size: 3vh;
 	line-height: 1.5em;
 	outline: none;
 	font-family: 'Kalam', cursive;
@@ -59,88 +62,88 @@ body {
 	top: 0px;
 	width: 100%;
 	background: #eee;
-	padding: 5px 20px;
+	padding: 5px 0px;
 	z-index: 10;
 	font-size: 0.8em;
 	line-height: 1.2em;
 
-	.country-list-container {
+	.country-list-wrapper {
 		@include transition-property(height, padding);
 		@include transition-duration(0.5s);
 		overflow: hidden;
 		height: 0;
-		width: 1030px;
-		margin: 0 auto;
+		overflow-y: scroll;
 
 		&.open {
-			height: 623px;
+			height: 80vh;
 			padding: 20px 0px;
 		}
-	}
 
-	.country-list {
-		float: left;
-		margin-right: 20px;
-		width: 100px;
+		.country-list {
+			width: 1060px;
+			margin: 0 auto;
 
-		.region-title {
-			font-size: 1.2em;
-			line-height: 1.2em;
-			margin-bottom: 10px;
-			text-align: center;
-		}
-
-		ul {
-			li.country-tile {
-				@include box-sizing(border-box);
-				@include border-radius(2px);
-				width: 100px;
-				margin-bottom: 2px;
-				margin-right: 10px;
+			.region {
 				float: left;
-				padding: 2px 5px;
-				min-height: 20px;
-				background: #fff;
+				margin-right: 20px;
 
-				&.guessed {
-					background: #87C5A0;
-					color: #fff;
-				}
-
-				span {
+				.region-title {
+					font-size: 1.2em;
+					line-height: 1.2em;
+					margin-bottom: 10px;
 					text-align: center;
-					display: block;
-					line-height: 16px;
 				}
+
+				ul {
+					width: 100px;
+					li.country-tile {
+						@include box-sizing(border-box);
+						@include border-radius(2px);
+						@include column-break(inside, avoid);
+						width: 100px;
+						margin-bottom: 2px;
+						margin-right: 10px;
+						padding: 2px 5px;
+						min-height: 20px;
+						background: #fff;
+
+						&.guessed {
+							background: #87C5A0;
+							color: #fff;
+						}
+
+						span {
+							text-align: center;
+							display: block;
+							line-height: 16px;
+						}
+					}
+
+					&.double {
+						@include columns(2);
+						width: 220px;
+					}
+				}
+
 			}
 		}
-
-		&.double {
-			width: 220px;
-			margin-right: 10px;
-
-			.region-title {
-				margin-left: -10px;
-			}
-		}
-
 	}
 
-	
-}
-
-.score {
-	position: absolute;
-	bottom: -36px;
-	right: 60px;
-	background: #EEE;
-	padding: 10px 40px;
-	line-height: 1.5em;
-	font-size: 1em;
-	letter-spacing: 1px;
-	@include border-radius(0px 0px 2px 2px);
-	font-weight: bold;
-	cursor: pointer;
+	.score {
+		@include border-radius(0px 0px 2px 2px);
+		position: absolute;
+		bottom: -36px;
+		right: 60px;
+		background: #EEE;
+		padding: 10px 0px;
+		width: 100px;
+		text-align: center;
+		line-height: 1.5em;
+		font-size: 1em;
+		letter-spacing: 1px;
+		font-weight: bold;
+		cursor: pointer;
+	}
 }
 
 .last {

@@ -12,6 +12,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="stylesheets/screen.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -23,57 +24,59 @@
         <div ng-controller="ramblController">
 
             <div class="scoreboard">
-                <div class="country-list-container" ng-class="{'open' : countryListOpen}">
-                    <div class="country-list double">
-                        <h1 class="region-title">Europe</h1>
-                        <ul>
-                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'europe'}" ng-class="{'guessed' : country.guessed}">
-                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="country-list double">
-                        <h1 class="region-title">Africa</h1>
-                        <ul>
-                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'africa'}" ng-class="{'guessed' : country.guessed}">
-                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="country-list double">
-                        <h1 class="region-title">Asia</h1>
-                        <ul>
-                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'asia'}" ng-class="{'guessed' : country.guessed}">
-                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="country-list-wrapper" ng-class="{'open' : countryListOpen}">
                     <div class="country-list">
-                        <h1 class="region-title">North America</h1>
-                        <ul>
-                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'north america'}" ng-class="{'guessed' : country.guessed}">
-                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="country-list">
-                        <h1 class="region-title">South America</h1>
-                        <ul>
-                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'south america'}" ng-class="{'guessed' : country.guessed}">
-                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="country-list last">
-                        <h1 class="region-title">Oceania</h1>
-                        <ul>
-                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'oceania'}" ng-class="{'guessed' : country.guessed}">
-                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
-                            </li>
-                        </ul>
+                        <div class="region">
+                            <h1 class="region-title">Europe</h1>
+                            <ul class="double">
+                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'europe'}" ng-class="{'guessed' : country.guessed}">
+                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="region">
+                            <h1 class="region-title">Africa</h1>
+                            <ul class="double">
+                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'africa'}" ng-class="{'guessed' : country.guessed}">
+                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="region">
+                            <h1 class="region-title">Asia</h1>
+                            <ul class="double">
+                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'asia'}" ng-class="{'guessed' : country.guessed}">
+                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="region">
+                            <h1 class="region-title">North America</h1>
+                            <ul>
+                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'north america'}" ng-class="{'guessed' : country.guessed}">
+                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="region">
+                            <h1 class="region-title">South America</h1>
+                            <ul>
+                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'south america'}" ng-class="{'guessed' : country.guessed}">
+                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="region last">
+                            <h1 class="region-title">Oceania</h1>
+                            <ul>
+                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'oceania'}" ng-class="{'guessed' : country.guessed}">
+                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed">{{country.names[0]}}</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="score" ng-click="countryListOpen = !countryListOpen">{{correctGuesses}} / 196</div>
+                <div class="score" ng-click="countryListOpen = !countryListOpen">{{correctGuesses}} / 196 <i class="fa" ng-class="{'fa-arrow-circle-down' : !countryListOpen, 'fa-arrow-circle-up' : countryListOpen}"></i></div>
             </div>
 
             <div class="map-container">

@@ -14,12 +14,12 @@ rambl.controller('ramblController', function ($scope, $timeout, countryFactory) 
 
 	// set map width (decreases height by 80 for 30px padding on top and bottom, or width by 80
 	// to give space either side plus some breathing space to prevent scrollbars)
-	if ((windowHeight - 80) * mapRatio < windowWidth - 80) {
-		$mapContainer.width((windowHeight - 80) * mapRatio);
+	/*if ((windowHeight - 80) * mapRatio < windowWidth - 80) {
+		$mapContainer.css('max-width', (windowHeight - 80) * mapRatio);
 	}
 	else {
-		$mapContainer.width(windowWidth - 80);
-	}
+		$mapContainer.css('max-width', windowWidth - 80);
+	}*/
 
 	// init mapael
 	$mapContainer.mapael({
