@@ -5,6 +5,22 @@
 
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/utilities/general/clearfix";
+
+// Mixins
+@mixin button($bgcolor: #113550, $color: #FFFFFF) {
+  @include border-radius(2px);
+  background-color: $bgcolor;
+  color: $color;
+  line-height: 2.2em;
+  padding: 0px 1em;
+  border: none;
+  cursor: pointer;
+  font-family: 'Kalam', cursive;
+  &:hover {
+  	background-color: darken( $bgcolor, 5% );
+  }
+}
 
 // Fonts
 @import url(http://fonts.googleapis.com/css?family=Kalam:400,700);
@@ -16,13 +32,29 @@ body {
 	overflow: hidden;
 }
 
+button {
+	@include button();
+}
+
 .map-container {
 	margin: 30px auto;
-	width: 80vmax;
+	@media (orientation:landscape) {
+		width: 150vmin;
+	}
+	@media (min-aspect-ratio: 20/7) {
+		width: 140vmin;
+	}
+	@media (min-aspect-ratio: 20/5) {
+		width: 130vmin;
+	}
+	@media (orientation:portrait) {
+		width: 80vmin;
+	}
 }
 
 .country-text{
 	@include border-radius(2px);
+	@include transition(color 0.05s ease-in-out);
 	position: fixed;
 	bottom: 50px;
 	left: 50vw;
@@ -39,6 +71,17 @@ body {
 	text-align: center;
 	color: #FFF;
 	opacity: 0.6;
+
+	&:disabled {
+		opacity: 0.1;
+	}
+
+	&.correct {
+		color: #A3ECC1;
+		@include animation-name(bounce);
+		@include animation-fill-mode(both);
+		@include animation-duration(0.5s);
+	}
 }
 
 ::-webkit-input-placeholder {
@@ -80,6 +123,7 @@ body {
 		}
 
 		.country-list {
+			@include clearfix();
 			width: 1060px;
 			margin: 0 auto;
 
@@ -99,16 +143,21 @@ body {
 					li.country-tile {
 						@include box-sizing(border-box);
 						@include border-radius(2px);
-						@include column-break(inside, avoid);
+						display: inline-block;
 						width: 100px;
-						margin-bottom: 2px;
-						margin-right: 10px;
+						margin-bottom: 4px;
 						padding: 2px 5px;
 						min-height: 20px;
 						background: #fff;
+						vertical-align: top;
 
 						&.guessed {
 							background: #87C5A0;
+							color: #fff;
+						}
+
+						&.revealed {
+							background-color: #F69797;
 							color: #fff;
 						}
 
@@ -144,8 +193,51 @@ body {
 		font-weight: bold;
 		cursor: pointer;
 	}
+
+	.controls {
+		text-align: center;
+		padding: 20px 0px;
+
+		button {
+			font-size: 1.3em;
+		}
+	}
+}
+
+.timer {
+	@include border-radius(0px 0px 2px 2px);
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	font-weight: 700;
+	background: #eee;
+	padding: 15px 0px 10px 0px;
+	font-size: 1.4em;
+	vertical-align: bottom;
+	width: 120px;
+	text-align: center;
+	z-index: 20;
 }
 
 .last {
 	margin-right: 0px !important;
+}
+
+// Animations
+@include keyframes(bounce) {
+	0%, 58%, 100% {
+		@include transition-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
+		@include transform(translate3d(0,0,0));
+	}
+	33%, 43% {
+		@include transition-timing-function(cubic-bezier(0.755, 0.050, 0.855, 0.060));
+		@include transform(translate3d(0,-30px,0));
+	}
+	80%, 84% {
+		@include transition-timing-function(cubic-bezier(0.755, 0.050, 0.855, 0.060));
+		@include transform(translate3d(0,-10px,0));
+	}
+	/* 85% {
+		@include transform(translate3d(0,-4px,0));
+	} */
 }

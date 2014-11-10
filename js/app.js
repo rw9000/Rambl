@@ -1,25 +1,20 @@
 var rambl = angular.module('rambl', []);
 
-rambl.controller('ramblController', function ($scope, $timeout, countryFactory) {
+rambl.controller('ramblController', function ($scope, $timeout, $interval, countryFactory) {
 	$scope.countries = [];
 	$scope.correctGuesses = 0;
 	$scope.guess = null;
 	$scope.countryListOpen = false;
+	$scope.gameActive = true;
+	$scope.gameTime = 15 * 60;
 
 	// initialize map
 	var mapRatio = 950/550,
 		windowWidth = $(window).width(),
 		windowHeight = $(window).height(),
-		$mapContainer = $(".map-container");
-
-	// set map width (decreases height by 80 for 30px padding on top and bottom, or width by 80
-	// to give space either side plus some breathing space to prevent scrollbars)
-	/*if ((windowHeight - 80) * mapRatio < windowWidth - 80) {
-		$mapContainer.css('max-width', (windowHeight - 80) * mapRatio);
-	}
-	else {
-		$mapContainer.css('max-width', windowWidth - 80);
-	}*/
+		$mapContainer = $(".map-container"),
+		$input = $(".country-text"),
+		counter;
 
 	// init mapael
 	$mapContainer.mapael({
@@ -47,7 +42,7 @@ rambl.controller('ramblController', function ($scope, $timeout, countryFactory) 
 	// Watch the user input to see if it's in the countries object
 	$scope.$watch('guess', function(newVal, oldVal){
 		// Check if the value matches any country names
-		var guess = newVal;
+		var guess = newVal.toLowerCase();
 		var match = $.map($scope.countries, function(country, index) {
 			var names = [];
 			for (var i = 0; i < country.names.length; i++) {
@@ -62,22 +57,77 @@ rambl.controller('ramblController', function ($scope, $timeout, countryFactory) 
 
 		if (match[0]) {
 			// Guess matched a country. Check if it's already been guessed.
-			if ($.inArray(match[0], $scope.correctGuesses) === -1) {
+			if (match[0].guessed === false) {
 				// Hasn't already been guessed. Highlight the country.
 				$('#'+match[0].pathName).trigger('guessed');
 				// Update 'guessed' property of this country in country array
 				$scope.countries[match[0].index].guessed = true;
 				// Increment correct guesses
 				$scope.correctGuesses++;
-				// Reset the text input (after a timeout - looks nicer);
+				// Run the success animation on the text input
+				$input.addClass('correct');
+				// Reset the text input (after a timeout - feels a bit nicer);
 				$timeout(function() {
 					$scope.guess = "";
-				}, 300);
+					$input.removeClass('correct');
+				}, 500);
 			}
 		}
 	});
+
+	// End game
+	$scope.endGame = function() {
+		// Set gamestate to inactive
+		$scope.gameActive = false;
+
+		// Stop the timer
+		$scope.gameTime = 0;
+		$interval.cancel(counter);
+
+		// run through the countries, marking any that haven't
+		// been guessed to be revealed
+		angular.forEach($scope.countries, function(country, key) {
+			if (country.guessed === false) country.reveal = true;
+		});
+	}
+
+	// Reset game
+	$scope.reset = function() {
+		// Reset all country states
+		angular.forEach($scope.countries, function(country, key) {
+			country.guessed = false;
+			country.reveal = false;
+		});
+
+		// Reset map colours
+		$(".map-container").trigger('update');
+
+		// Reset counter
+		$scope.correctGuesses = 0;
+
+		// Set gamestate to active
+		$scope.gameActive = true;
+
+		// Begin timer
+		$scope.gameTime = 15 * 60 * 1000;
+		counter = $interval(function() {
+			$scope.gameTime -= 1000;
+			if ($scope.gameTime === 0) {
+				$scope.timeUp();
+			}
+		}, 1000);
+	}
+
+	$scope.timeUp = function() {
+		$scope.endGame();
+		alert("time up!");
+	}
+
+	// start the game
+	$scope.reset();
 });
 
 rambl.factory('countryFactory', function($http) {
     return $http.get('/js/data/countries.json');
 });
+

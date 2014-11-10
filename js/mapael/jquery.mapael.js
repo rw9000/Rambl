@@ -267,7 +267,6 @@
 			options.eventHandlers && $.fn.mapael.setEventHandlers(id, options, elem.mapElem, elem.textElem);
 			$(elem.textElem.node).attr("data-id", id);
 		} else {
-			/*$.fn.mapael.setHover(paper, elem.mapElem);*/
 			$.fn.mapael.setGuessed(paper, elem.mapElem, elem.textElem);
 			options.eventHandlers && $.fn.mapael.setEventHandlers(id, options, elem.mapElem);
 		}
@@ -758,14 +757,30 @@
 	* @param textElem the optional text element (within the map element)
 	*/
 	$.fn.mapael.setGuessed = function (paper, mapElem, textElem) {
-		var $mapElem = {}
-			, $textElem = {}
-			, hoverTO = 0
-			, guessedBehaviour = function() {hoverTO = setTimeout(function () {$.fn.mapael.elemHover(paper, mapElem, textElem);}, 120);}
+		var $mapElem = {},
+			$textElem = {},
+			hoverTO = 0,
+			guessedBehaviour = function() {
+				hoverTO = setTimeout(function () {
+					$.fn.mapael.elemGuessed(paper, mapElem, textElem);
+				}, 120);
+			}
 			
 		$mapElem = $(mapElem.node);
 		$mapElem.on("guessed", guessedBehaviour);
 	};
+	
+	/**
+	* Set he behaviour for "guessed" event
+	* @param paper paper Raphael paper object
+	* @param mapElem mapElem the map element
+	* @param textElem the optional text element (within the map element)
+	*/
+	$.fn.mapael.elemGuessed = function (paper, mapElem, textElem) {
+		mapElem.animate(mapElem.attrsHover, mapElem.attrsHover.animDuration);
+		textElem && textElem.animate(textElem.attrsHover, textElem.attrsHover.animDuration);
+		paper.safari();
+	}
 	
 	/**
 	* Set he behaviour for "mouseover" event
