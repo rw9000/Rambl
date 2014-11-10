@@ -22,10 +22,10 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, count
 			name : "world_countries_2",
 			defaultArea: {
 				attrs : {
-		        	fill: "#0B2D45",
-		        	stroke: "transparent",
-		        	'stroke-width': 0
-		        },
+					fill: "#0B2D45",
+					stroke: "transparent",
+					'stroke-width': 0
+				},
 				attrsHover : {
 					fill: "#308352",
 					animDuration : 600
@@ -46,7 +46,7 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, count
 		var match = $.map($scope.countries, function(country, index) {
 			var names = [];
 			for (var i = 0; i < country.names.length; i++) {
-			    names.push(country.names[i].toLowerCase());
+				names.push(country.names[i].toLowerCase());
 			}
 			if ($.inArray(guess, names) > -1) {
 				// add the index of this country to the returned object
@@ -81,8 +81,11 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, count
 		$scope.gameActive = false;
 
 		// Stop the timer
-		$scope.gameTime = 0;
 		$interval.cancel(counter);
+		$scope.gameTime = 0;
+
+		// Open the country list
+		$scope.countryListOpen = true;
 
 		// run through the countries, marking any that haven't
 		// been guessed to be revealed
@@ -109,7 +112,8 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, count
 		$scope.gameActive = true;
 
 		// Begin timer
-		$scope.gameTime = 15 * 60 * 1000;
+		//$scope.gameTime = 15 * 60 * 1000;
+		$scope.gameTime = 2 * 1000;
 		counter = $interval(function() {
 			$scope.gameTime -= 1000;
 			if ($scope.gameTime === 0) {
