@@ -1,48 +1,35 @@
-var rambl = angular.module('rambl', []);
+var rambl = angular.module('rambl', ['ngDialog']);
 
-rambl.controller('ramblController', function ($scope, $timeout, $interval, countryFactory) {
+rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDialog, countryFactory) {
 	$scope.countries = [];
 	$scope.correctGuesses = 0;
 	$scope.guess = null;
 	$scope.countryListOpen = false;
-	$scope.gameActive = true;
+	$scope.gameStarted = false;
+	$scope.gameActive = false;
 	$scope.gameTime = 15 * 60;
+	$scope.modalShown = true;
+	$scope.modalTitle = "Rambl";
+	$scope.modalText =  "Type country names into the box below, try to get all 196. That's all.";
 
 	// initialize map
-	var mapRatio = 950/550,
-		windowWidth = $(window).width(),
-		windowHeight = $(window).height(),
-		$mapContainer = $(".map-container"),
-		$input = $(".country-text"),
+	var $input = $(".country-text"),
 		counter;
-
-	// init mapael
-	$mapContainer.mapael({
-		map : {
-			name : "world_countries_2",
-			defaultArea: {
-				attrs : {
-					fill: "#0B2D45",
-					stroke: "transparent",
-					'stroke-width': 0
-				},
-				attrsHover : {
-					fill: "#308352",
-					animDuration : 600
-				}
-			}
-		}
-	});
 
 	// Load country data
 	countryFactory.success(function(data) {
 		$scope.countries = angular.fromJson(data);
 	});
 
-	// Watch the user input to see if it's in the countries object
-	$scope.$watch('guess', function(newVal, oldVal){
+	$scope.toggleModal = function() {
+	    $scope.modalShown = !$scope.modalShown;
+	};
+
+	// Check the user input to see if it's in the countries object
+	$scope.checkInput = function(guess){
+		$scope.modalTitle = "test";
 		// Check if the value matches any country names
-		var guess = newVal.toLowerCase();
+		var guess = guess.toLowerCase();
 		var match = $.map($scope.countries, function(country, index) {
 			var names = [];
 			for (var i = 0; i < country.names.length; i++) {
@@ -66,14 +53,32 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, count
 				$scope.correctGuesses++;
 				// Run the success animation on the text input
 				$input.addClass('correct');
-				// Reset the text input (after a timeout - feels a bit nicer);
+				// Reset the text input
+				$scope.guess = "";
+				// Do the correct answer animation
 				$timeout(function() {
-					$scope.guess = "";
 					$input.removeClass('correct');
 				}, 500);
+
+				// If they've just won, run the win function
+				if ($scope.correctGuesses === $scope.countries.length) {
+					$scope.win();
+				}
 			}
 		}
-	});
+	}
+
+	// Start game
+	$scope.startGame = function() {
+		// Flag game as started
+		$scope.gameStarted = true;
+
+		// Close the modal
+		$scope.modalShown = false;
+
+		// Start the game
+		$scope.reset();
+	}
 
 	// End game
 	$scope.endGame = function() {
@@ -103,17 +108,17 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, count
 		});
 
 		// Reset map colours
-		$(".map-container").trigger('update');
+		$("mapael").trigger('update');
 
 		// Reset counter
 		$scope.correctGuesses = 0;
 
 		// Set gamestate to active
+		$scope.gameStarted = true;
 		$scope.gameActive = true;
 
 		// Begin timer
-		//$scope.gameTime = 15 * 60 * 1000;
-		$scope.gameTime = 2 * 1000;
+		$scope.gameTime = 15 * 60 * 1000;
 		counter = $interval(function() {
 			$scope.gameTime -= 1000;
 			if ($scope.gameTime === 0) {
@@ -124,11 +129,27 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, count
 
 	$scope.timeUp = function() {
 		$scope.endGame();
-		alert("time up!");
+		// Update modal text and show it
+		$scope.modalTitle = "Time up!";
+		$scope.modalText =  "Owp... you ran out of time. Tweet your score below, or close this window to see which ones you missed.";
+		$scope.modalShown = true;
 	}
 
-	// start the game
-	$scope.reset();
+	$scope.win = function() {
+		$scope.endGame();
+		// Update modal text and show it
+		$scope.modalTitle = "You win!";
+		$scope.modalText =  "Whaaaat! You got them all. Tweet your score below, or close this window to see which ones you missed.";
+		$scope.modalShown = true;
+	}
+
+	$scope.giveUp = function() {
+		$scope.endGame();
+		// Update modal text and show it
+		$scope.modalTitle = "You wuss";
+		$scope.modalText =  "You quit like a baby. Tweet your score below, or close this window to see which ones you missed.";
+		$scope.modalShown = true;
+	}
 });
 
 rambl.factory('countryFactory', function($http) {

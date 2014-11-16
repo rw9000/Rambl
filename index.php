@@ -16,90 +16,93 @@
         <link rel="stylesheet" href="stylesheets/screen.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body ng-app="rambl" noscroll>
+    <body ng-app="rambl" ng-controller="ramblController" noscroll>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div ng-controller="ramblController">
-
-            <div class="scoreboard">
-                <div class="country-list-wrapper" ng-class="{'open' : countryListOpen}">
-                    <div class="country-list">
-                        <div class="region">
-                            <h1 class="region-title">Europe</h1>
-                            <ul class="double">
-                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'europe'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
-                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="region">
-                            <h1 class="region-title">Africa</h1>
-                            <ul class="double">
-                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'africa'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
-                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="region">
-                            <h1 class="region-title">Asia</h1>
-                            <ul class="double">
-                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'asia'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
-                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="region">
-                            <h1 class="region-title">North America</h1>
-                            <ul>
-                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'north america'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
-                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="region">
-                            <h1 class="region-title">South America</h1>
-                            <ul>
-                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'south america'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
-                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="region last">
-                            <h1 class="region-title">Oceania</h1>
-                            <ul>
-                                <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'oceania'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
-                                    <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
-                                </li>
-                            </ul>
-                        </div>
+        <div class="scoreboard">
+            <div class="country-list-wrapper" ng-class="{'open' : countryListOpen}">
+                <div class="country-list">
+                    <div class="region">
+                        <h1 class="region-title">Europe</h1>
+                        <ul class="double">
+                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'europe'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
+                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="controls"><button ng-click="endGame()">Give up</button> <button ng-click="reset()">Reset</button></div>
+                    <div class="region">
+                        <h1 class="region-title">Africa</h1>
+                        <ul class="double">
+                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'africa'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
+                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h1 class="region-title">Asia</h1>
+                        <ul class="double">
+                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'asia'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
+                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h1 class="region-title">North America</h1>
+                        <ul>
+                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'north america'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
+                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region">
+                        <h1 class="region-title">South America</h1>
+                        <ul>
+                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'south america'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
+                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="region last">
+                        <h1 class="region-title">Oceania</h1>
+                        <ul>
+                            <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'oceania'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
+                                <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-
-                <div class="score" ng-click="countryListOpen = !countryListOpen">{{correctGuesses}} / {{countries.length}} <i class="fa" ng-class="{'fa-arrow-circle-down' : !countryListOpen, 'fa-arrow-circle-up' : countryListOpen}"></i></div>
             </div>
 
-            <div class="map-container">
-    			<div class="map"></div>
-    		</div>
 
-            <div class="timer"><i class="fa fa-clock-o"></i> {{gameTime | date:'mm:ss'}}</div>
-
-            <input type="text" ng-disabled="!gameActive" autofocus="autofocus" class="country-text" ng-model="guess" ng-change="check()" placeholder="enter a country name..."/>
+            <div class="score" ng-click="countryListOpen = !countryListOpen">{{correctGuesses}} / {{countries.length}} <i class="fa" ng-class="{'fa-arrow-circle-down' : !countryListOpen, 'fa-arrow-circle-up' : countryListOpen}"></i></div>
         </div>
 
+        <mapael></mapael>
+
+        <div class="timer"><i class="fa fa-clock-o"></i> {{gameTime | date:'mm:ss'}}</div>
+
+        <div class="controls"><button ng-click="giveUp()">Give up</button> <input type="text" ng-disabled="!gameActive" autofocus="autofocus" class="country-text" ng-model="guess" ng-change="checkInput(guess)" placeholder="enter a country name..."/> <button ng-click="reset()">Reset</button></div>
         
+        <modal-dialog show='modalShown' width='30%'>
+            <h1>{{modalTitle}}</h1>
+            <span class="score" ng-show="gameStarted"><em>{{correctGuesses}}</em> out of <em>{{countries.length}}</em></span>
+            <p>{{modalText}}</p>
+            <button ng-click="startGame()">Go!</button>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="I know {{correctGuesses}} out of 196 countries, bitches" ng-show="gameStarted">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </modal-dialog>
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
         <script src="js/mapael/raphael/raphael-min.js"></script>
         <script src="js/mapael/jquery.mapael.js"></script>
         <script src="js/mapael/maps/world_countries_2.js"></script>
+        <script src="js/modules/ngDialog.min.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/directives.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
