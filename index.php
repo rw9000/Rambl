@@ -21,7 +21,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="scoreboard">
+        <div class="scoreboard" ng-class="{'open' : countryListOpen}">
             <div class="country-list-wrapper" ng-class="{'open' : countryListOpen}">
                 <div class="country-list">
                     <div class="region">
@@ -64,9 +64,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="region last">
+                    <div class="region">
                         <h1 class="region-title">Oceania</h1>
-                        <ul>
+                        <ul class="last">
                             <li class="country-tile" ng-repeat="country in countries|orderBy:['names[0]']|filter:{'region':'oceania'}" ng-class="{'guessed' : country.guessed, 'revealed' : country.reveal}">
                                 <span class="region-{{country.region|lowercase}}" ng-show="country.guessed || country.reveal">{{country.names[0]}}</span>
                             </li>

@@ -116,8 +116,7 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDia
 		// Set gamestate to active
 		$scope.gameStarted = true;
 		$scope.gameActive = true;
-
-		// Begin timer
+		
 		$scope.gameTime = 15 * 60 * 1000;
 		counter = $interval(function() {
 			$scope.gameTime -= 1000;

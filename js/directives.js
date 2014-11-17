@@ -3,6 +3,7 @@ rambl.directive('mapael', function() {
 	return {
 		restrict: 'E',
 		transclude: true,
+		replace: true,
 		template: '<div class="map-container"><div class="map"></div></div>',
 		link: function (scope, element) {
 			element.mapael({
