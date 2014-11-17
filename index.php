@@ -75,13 +75,12 @@
                 </div>
             </div>
 
+            <div class="timer"><i class="fa fa-clock-o"></i> {{gameTime | date:'mm:ss'}}</div>
 
             <div class="score" ng-click="countryListOpen = !countryListOpen">{{correctGuesses}} / {{countries.length}} <i class="fa" ng-class="{'fa-arrow-circle-down' : !countryListOpen, 'fa-arrow-circle-up' : countryListOpen}"></i></div>
         </div>
 
         <mapael></mapael>
-
-        <div class="timer"><i class="fa fa-clock-o"></i> {{gameTime | date:'mm:ss'}}</div>
 
         <div class="controls"><button ng-click="giveUp()">Give up</button> <input type="text" ng-disabled="!gameActive" autofocus="autofocus" class="country-text" ng-model="guess" ng-change="checkInput(guess)" placeholder="enter a country name..."/> <button ng-click="reset()">Reset</button></div>
         

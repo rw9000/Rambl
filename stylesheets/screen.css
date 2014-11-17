@@ -322,14 +322,12 @@ em {
   font-weight: bold;
   cursor: pointer;
 }
-
-/* line 215, ../sass/screen.scss */
-.timer {
+/* line 214, ../sass/screen.scss */
+.scoreboard .timer {
   -moz-border-radius: 0px 0px 2px 2px;
   -webkit-border-radius: 0px;
   border-radius: 0px 0px 2px 2px;
   position: absolute;
-  top: 10px;
   left: 20px;
   font-weight: 700;
   background: #eee;
@@ -340,8 +338,20 @@ em {
   text-align: center;
   z-index: 20;
 }
+@media (max-width: 1370px) {
+  /* line 214, ../sass/screen.scss */
+  .scoreboard .timer {
+    bottom: -43px;
+  }
+}
+@media (min-width: 1371px) {
+  /* line 214, ../sass/screen.scss */
+  .scoreboard .timer {
+    top: 10px;
+  }
+}
 
-/* line 232, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .ng-modal-overlay {
   -moz-animation-name: fadein-mask;
   -webkit-animation-name: fadein-mask;
@@ -362,7 +372,7 @@ em {
   opacity: 0.3;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .ng-modal-dialog {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -390,22 +400,22 @@ em {
   box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.5);
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .ng-modal-dialog-content {
   padding: 30px;
   text-align: center;
 }
-/* line 265, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .ng-modal-dialog-content h1 {
   font-size: 3em;
   font-weight: 700;
 }
-/* line 270, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .ng-modal-dialog-content p {
   padding-bottom: 1em;
   line-height: 1.3em;
 }
-/* line 275, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .ng-modal-dialog-content .score {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -418,7 +428,7 @@ em {
   width: 200px;
 }
 
-/* line 286, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .ng-modal-close {
   position: absolute;
   top: 3px;
@@ -431,7 +441,7 @@ em {
   font-weight: bold;
 }
 
-/* line 300, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .last {
   margin-right: 0px !important;
 }

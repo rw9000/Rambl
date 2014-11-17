@@ -210,21 +210,26 @@ em {
 		font-weight: bold;
 		cursor: pointer;
 	}
-}
 
-.timer {
-	@include border-radius(0px 0px 2px 2px);
-	position: absolute;
-	top: 10px;
-	left: 20px;
-	font-weight: 700;
-	background: #eee;
-	padding: 15px 0px 10px 0px;
-	font-size: 1.4em;
-	vertical-align: bottom;
-	width: 120px;
-	text-align: center;
-	z-index: 20;
+	.timer {
+		@include border-radius(0px 0px 2px 2px);
+		position: absolute;
+		left: 20px;
+		font-weight: 700;
+		background: #eee;
+		padding: 15px 0px 10px 0px;
+		font-size: 1.4em;
+		vertical-align: bottom;
+		width: 120px;
+		text-align: center;
+		z-index: 20;
+		@media (max-width:1370px) {
+			bottom: -43px;
+		}
+		@media (min-width:1371px) {
+			top: 10px;
+		}
+	}
 }
 
 
