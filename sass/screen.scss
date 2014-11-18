@@ -35,8 +35,9 @@ body {
 	font-family: 'Kalam', cursive;
 	overflow: hidden;
 	height:100%;
-	@media (orientation:portrait) {
+	@media (max-width: 1040px) {
 		overflow: visible;
+		-webkit-overflow-scrolling: touch;
 	}
 }
 
@@ -66,11 +67,10 @@ em {
 		width: 90%;
 		width: 130vmin;
 	}
-	@media (orientation:portrait) {
-		@include transform(translateY(-50%));
+	@media (max-width: 1040px) {
 		width: 100%;
 		position: relative;
-		top: 40%;
+		top: 80px;
 		margin: 0px;
 	}
 }
@@ -87,17 +87,18 @@ em {
 	width: 40vw;
 	margin-left:-20%;
 	margin-left:-20vw;
-	@media (orientation:portrait) {
+	@media (max-width: 1040px) {
 		width: 90%;
 		margin-left: -45%;
 		overflow: visible;
-		bottom: 10px;
+		top: 140px;
+		position: relative;
 	}
 
 	button {
 		font-size: 1.3em;
 		font-size: 1vw;
-		@media (orientation:portrait) {
+		@media (max-width: 1040px) {
 			width: 50%;
 			float: left;
 			font-size: 1em;
@@ -131,12 +132,13 @@ em {
 			@include animation-duration(0.5s);
 		}
 
-		@media (orientation:portrait) {
+		@media (max-width: 1040px) {
 			@include box-sizing(border-box);
 			width: 100%;
 			position: absolute;
 			display: block;
 			top: -50px;
+			font-size: 1.6em;
 		}
 	}
 }
@@ -165,7 +167,7 @@ em {
 	z-index: 10;
 	font-size: 0.8em;
 	line-height: 1.2em;
-	@media (orientation:portrait) {
+	@media (max-width: 1040px) {
 		@include transition-property(margin-left);
 		@include transition-duration(0.5s);
 		margin-left: -100%;
@@ -181,7 +183,7 @@ em {
 		overflow: hidden;
 		height: 0;
 		overflow-y: scroll;
-		@media (orientation:portrait) {
+		@media (max-width: 1040px) {
 			padding: 20px 0px;
 			height: 100% !important;
 		}
@@ -189,7 +191,7 @@ em {
 		&.open {
 			height: 80vh;
 			padding: 20px 0px;
-			@media (orientation:portrait) {
+			@media (max-width: 1040px) {
 				width:100%;
 				float: left;
 				font-size: 1em;
@@ -200,14 +202,14 @@ em {
 			@include clearfix();
 			width: 1060px;
 			margin: 0 auto;
-			@media (orientation:portrait) {
+			@media (max-width: 1040px) {
 				width: 80%;
 				margin: 0 auto;
 			}
 
 			.region {
 				float: left;
-				@media (orientation:portrait) {
+				@media (max-width: 1040px) {
 					float: none;
 
 				}
@@ -217,7 +219,7 @@ em {
 					line-height: 1.2em;
 					margin-bottom: 10px;
 					text-align: center;
-					@media (orientation:portrait) {
+					@media (max-width: 1040px) {
 						font-size: 2em;
 						margin-top: 30px;
 					}
@@ -236,7 +238,7 @@ em {
 						min-height: 20px;
 						background: #fff;
 						vertical-align: top;
-						@media (orientation:portrait) {
+						@media (max-width: 1040px) {
 							width: 100%;
 						}
 
@@ -260,11 +262,11 @@ em {
 					&.double {
 						@include columns(2);
 						width: 220px;
-						@media (orientation:portrait) {
+						@media (max-width: 1040px) {
 							@include columns(1);
 						}
 					}
-					@media (orientation:portrait) {
+					@media (max-width: 1040px) {
 						width: 100% !important;
 					}
 				}
@@ -287,7 +289,7 @@ em {
 		letter-spacing: 1px;
 		font-weight: bold;
 		cursor: pointer;
-		@media (orientation:portrait) {
+		@media (max-width: 1040px) {
 			@include border-radius(2px);
 			padding: 10px 0px;
 			position: fixed;
@@ -317,7 +319,7 @@ em {
 		@media (min-width:1371px) {
 			top: 10px;
 		}
-		@media (orientation:portrait) {
+		@media (max-width: 1040px) {
 			@include border-radius(2px);
 			padding: 10px 0px;
 			position: fixed;
@@ -359,6 +361,10 @@ em {
 	left: 50%;
 	background-color: #eee;
 	box-shadow: 4px 4px 80px rgba(0,0,0,0.5);
+
+	@media (max-width: 1040px) {
+		width: 90% !important;
+	}
 }
 
 .ng-modal-dialog-content {
