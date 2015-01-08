@@ -14,7 +14,6 @@
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="stylesheets/screen.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body ng-app="rambl" ng-controller="ramblController" noscroll key-focus>
 
@@ -74,14 +73,14 @@
 
             <div class="timer"><i class="fa fa-clock-o"></i> {{gameTime | date:'mm:ss'}}</div>
 
-            <div class="score" ng-click="countryListOpen = !countryListOpen">{{correctGuesses}} / {{countries.length}} <i class="fa" ng-class="{'fa-arrow-circle-down' : !countryListOpen, 'fa-arrow-circle-up' : countryListOpen}"></i></div>
+            <div class="score" ng-click="countryListOpen = !countryListOpen">{{correctGuesses}} / {{countries.length}} <i class="fa" ng-class="{'fa-bars' : !countryListOpen, 'fa-times-circle' : countryListOpen}"></i></div>
         </div>
 
         <mapael></mapael>
 
         <div class="controls">
             <button ng-click="giveUp()">Give up</button> 
-            <form><input type="text" ng-disabled="!gameActive" autofocus="autofocus" class="country-text" ng-model="guess" ng-change="checkInput(guess)" placeholder="enter a country name..."/></form> 
+            <input type="text" ng-disabled="!gameActive" autofocus="autofocus" class="country-text" ng-model="guess" ng-change="checkInput(guess)" placeholder="enter a country name..."/>
             <button ng-click="reset()">Reset</button>
         </div>
         
@@ -90,15 +89,15 @@
             <span class="score" ng-show="gameStarted"><em>{{correctGuesses}}</em> out of <em>{{countries.length}}</em></span>
             <p>{{modalText}}</p>
             <button ng-click="startGame()">Go!</button>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-text="I know {{correctGuesses}} out of 196 countries, bitches" ng-show="gameStarted">Tweet</a>
+            <button href="https://twitter.com/share" class="twitter-share-button" data-text="I know {{correctGuesses}} out of 196 countries, bitches" ng-show="gameStarted">Tweet</button>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </modal-dialog>
 
 
+        <script src="js/fastclick.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-touch.js"></script>
-        <script src="js/fastclick.min.js"></script>
         <script src="js/mapael/raphael/raphael-min.js"></script>
         <script src="js/mapael/jquery.mapael.js"></script>
         <script src="js/mapael/maps/world_countries_2.js"></script>
@@ -108,9 +107,8 @@
 
         <!-- Fastscript -->
         <script>
-            $(function() {
-                FastClick.attach(document.body);
-            });
+            var attachFastClick = Origami.fastclick;
+            attachFastClick(document.body);
         </script>
 
         <!-- Google Analytics -->

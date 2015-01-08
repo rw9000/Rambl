@@ -84,7 +84,7 @@ body {
 @media (max-width: 1040px) {
   /* line 32, ../sass/screen.scss */
   body {
-    overflow: visible;
+    overflow-y: visible;
     -webkit-overflow-scrolling: touch;
   }
 }
@@ -289,15 +289,16 @@ em {
     -o-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
+    width: 310px;
+    height: 100vh;
     margin-left: -100%;
-    height: 100%;
   }
-  /* line 175, ../sass/screen.scss */
+  /* line 176, ../sass/screen.scss */
   .scoreboard.open {
     margin-left: 0px;
   }
 }
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .scoreboard .country-list-wrapper {
   -moz-transition-property: opacity, margin-top;
   -o-transition-property: opacity, margin-top;
@@ -315,26 +316,27 @@ em {
   overflow-y: scroll;
 }
 @media (max-width: 1040px) {
-  /* line 180, ../sass/screen.scss */
+  /* line 181, ../sass/screen.scss */
   .scoreboard .country-list-wrapper {
     padding: 20px 0px;
     height: 100% !important;
+    margin-top: 0;
   }
 }
-/* line 194, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .scoreboard .country-list-wrapper.open {
   margin-top: 0vh;
   opacity: 1;
 }
 @media (max-width: 1040px) {
-  /* line 194, ../sass/screen.scss */
+  /* line 196, ../sass/screen.scss */
   .scoreboard .country-list-wrapper.open {
     width: 100%;
     float: left;
     font-size: 1em;
   }
 }
-/* line 204, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list {
   overflow: hidden;
   *zoom: 1;
@@ -343,23 +345,23 @@ em {
   padding-top: 20px;
 }
 @media (max-width: 1040px) {
-  /* line 204, ../sass/screen.scss */
+  /* line 206, ../sass/screen.scss */
   .scoreboard .country-list-wrapper .country-list {
     width: 80%;
     margin: 0 auto;
   }
 }
-/* line 214, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list .region {
   float: left;
 }
 @media (max-width: 1040px) {
-  /* line 214, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   .scoreboard .country-list-wrapper .country-list .region {
     float: none;
   }
 }
-/* line 221, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list .region .region-title {
   font-size: 1.2em;
   line-height: 1.2em;
@@ -367,18 +369,18 @@ em {
   text-align: center;
 }
 @media (max-width: 1040px) {
-  /* line 221, ../sass/screen.scss */
+  /* line 223, ../sass/screen.scss */
   .scoreboard .country-list-wrapper .country-list .region .region-title {
     font-size: 2em;
     margin-top: 30px;
   }
 }
-/* line 232, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list .region ul {
   width: 100px;
   margin-right: 20px;
 }
-/* line 235, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list .region ul li.country-tile {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -395,28 +397,28 @@ em {
   vertical-align: top;
 }
 @media (max-width: 1040px) {
-  /* line 235, ../sass/screen.scss */
+  /* line 237, ../sass/screen.scss */
   .scoreboard .country-list-wrapper .country-list .region ul li.country-tile {
     width: 100%;
   }
 }
-/* line 249, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list .region ul li.country-tile.guessed {
   background: #87C5A0;
   color: #fff;
 }
-/* line 254, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list .region ul li.country-tile.revealed {
   background-color: #F69797;
   color: #fff;
 }
-/* line 259, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list .region ul li.country-tile span {
   text-align: center;
   display: block;
   line-height: 16px;
 }
-/* line 266, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .scoreboard .country-list-wrapper .country-list .region ul.double {
   -moz-columns: 2;
   -webkit-columns: 2;
@@ -424,7 +426,7 @@ em {
   width: 220px;
 }
 @media (max-width: 1040px) {
-  /* line 266, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   .scoreboard .country-list-wrapper .country-list .region ul.double {
     -moz-columns: 1;
     -webkit-columns: 1;
@@ -432,12 +434,12 @@ em {
   }
 }
 @media (max-width: 1040px) {
-  /* line 232, ../sass/screen.scss */
+  /* line 234, ../sass/screen.scss */
   .scoreboard .country-list-wrapper .country-list .region ul {
     width: 100% !important;
   }
 }
-/* line 282, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .scoreboard .score {
   -moz-border-radius: 0px 0px 2px 2px;
   -webkit-border-radius: 0px;
@@ -456,7 +458,7 @@ em {
   cursor: pointer;
 }
 @media (max-width: 1040px) {
-  /* line 282, ../sass/screen.scss */
+  /* line 284, ../sass/screen.scss */
   .scoreboard .score {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -470,7 +472,7 @@ em {
     line-height: 1em;
   }
 }
-/* line 308, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .scoreboard .timer {
   -moz-border-radius: 0px 0px 2px 2px;
   -webkit-border-radius: 0px;
@@ -487,19 +489,19 @@ em {
   z-index: 20;
 }
 @media (max-width: 1370px) {
-  /* line 308, ../sass/screen.scss */
+  /* line 310, ../sass/screen.scss */
   .scoreboard .timer {
     bottom: -43px;
   }
 }
 @media (min-width: 1371px) {
-  /* line 308, ../sass/screen.scss */
+  /* line 310, ../sass/screen.scss */
   .scoreboard .timer {
     top: 10px;
   }
 }
 @media (max-width: 1040px) {
-  /* line 308, ../sass/screen.scss */
+  /* line 310, ../sass/screen.scss */
   .scoreboard .timer {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -514,7 +516,7 @@ em {
   }
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .ng-modal-overlay {
   -moz-animation-name: fadein-mask;
   -webkit-animation-name: fadein-mask;
@@ -535,7 +537,7 @@ em {
   opacity: 0.3;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .ng-modal-dialog {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -563,28 +565,28 @@ em {
   box-shadow: 4px 4px 80px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 1040px) {
-  /* line 354, ../sass/screen.scss */
+  /* line 356, ../sass/screen.scss */
   .ng-modal-dialog {
     width: 90% !important;
   }
 }
 
-/* line 374, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .ng-modal-dialog-content {
   padding: 30px;
   text-align: center;
 }
-/* line 378, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 .ng-modal-dialog-content h1 {
   font-size: 3em;
   font-weight: 700;
 }
-/* line 383, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .ng-modal-dialog-content p {
   padding-bottom: 1em;
   line-height: 1.3em;
 }
-/* line 388, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .ng-modal-dialog-content .score {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -597,7 +599,7 @@ em {
   width: 200px;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .ng-modal-close {
   position: absolute;
   top: 3px;
@@ -610,7 +612,7 @@ em {
   font-weight: bold;
 }
 
-/* line 413, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 .last {
   margin-right: 0px !important;
 }
