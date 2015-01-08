@@ -178,10 +178,13 @@ em {
 	}
 
 	.country-list-wrapper {
-		@include transition-property(height, padding);
+		@include transition-property(opacity, margin-top);
 		@include transition-duration(0.5s);
 		overflow: hidden;
-		height: 0;
+		opacity: 0;
+		height: 90%;
+		height: 80vh;
+		margin-top: -80vh;
 		overflow-y: scroll;
 		@media (max-width: 1040px) {
 			padding: 20px 0px;
@@ -189,8 +192,8 @@ em {
 		}
 
 		&.open {
-			height: 80vh;
-			padding: 20px 0px;
+			margin-top: 0vh;
+			opacity: 1;
 			@media (max-width: 1040px) {
 				width:100%;
 				float: left;
@@ -202,6 +205,7 @@ em {
 			@include clearfix();
 			width: 1060px;
 			margin: 0 auto;
+			padding-top: 20px;
 			@media (max-width: 1040px) {
 				width: 80%;
 				margin: 0 auto;
@@ -418,7 +422,7 @@ em {
 	}
 	33%, 43% {
 		@include transition-timing-function(cubic-bezier(0.755, 0.050, 0.855, 0.060));
-		@include transform(translate(0,-30px));
+		@include transform(translate(0,-20px));
 	}
 	80%, 84% {
 		@include transition-timing-function(cubic-bezier(0.755, 0.050, 0.855, 0.060));
@@ -426,7 +430,7 @@ em {
 	}
 }
 
-@-webkit-keyframes modal-drop {
+@include keyframes(modal-drop) {
 	0%, 60%, 75%, 90%, 100% {
 		@include transition-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
 	}
@@ -441,7 +445,7 @@ em {
 	}
 }
 
-@-webkit-keyframes fadein-mask {
+@include keyframes(fadein-mask) {
   0% {
     opacity: 0;
   }

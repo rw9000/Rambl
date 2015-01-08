@@ -1,4 +1,4 @@
-var rambl = angular.module('rambl', ['ngDialog']);
+var rambl = angular.module('rambl', ['ngTouch','ngDialog']);
 
 rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDialog, countryFactory) {
 	$scope.countries = [];
@@ -27,7 +27,7 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDia
 
 	// Check the user input to see if it's in the countries object
 	$scope.checkInput = function(guess){
-		$scope.modalTitle = "test";
+		/*$scope.modalTitle = "test";
 		// Check if the value matches any country names
 		var guess = guess.toLowerCase();
 		var match = $.map($scope.countries, function(country, index) {
@@ -65,7 +65,7 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDia
 					$scope.win();
 				}
 			}
-		}
+		}*/
 	}
 
 	// Start game
@@ -86,7 +86,7 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDia
 		$scope.gameActive = false;
 
 		// Stop the timer
-		$interval.cancel(counter);
+		/*$interval.cancel(counter);*/
 		$scope.gameTime = 0;
 
 		// Open the country list
@@ -107,7 +107,7 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDia
 			country.reveal = false;
 		});
 
-		// Reset map colours
+		// Reset map
 		$("mapael").trigger('update');
 
 		// Reset counter
@@ -118,12 +118,12 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDia
 		$scope.gameActive = true;
 		
 		$scope.gameTime = 15 * 60 * 1000;
-		counter = $interval(function() {
+		/*counter = $interval(function() {
 			$scope.gameTime -= 1000;
 			if ($scope.gameTime === 0) {
 				$scope.timeUp();
 			}
-		}, 1000);
+		}, 1000);*/
 	}
 
 	$scope.timeUp = function() {
@@ -138,7 +138,7 @@ rambl.controller('ramblController', function ($scope, $timeout, $interval, ngDia
 		$scope.endGame();
 		// Update modal text and show it
 		$scope.modalTitle = "You win!";
-		$scope.modalText =  "Whaaaat! You got them all. Tweet your score below, or close this window to see which ones you missed.";
+		$scope.modalText =  "You got them all! Tweet your score below, or close this window to play again.";
 		$scope.modalShown = true;
 	}
 

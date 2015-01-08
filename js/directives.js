@@ -48,3 +48,15 @@ rambl.directive('modalDialog', function() {
     templateUrl: '../partials/modal.html' // See below
   };
 });
+
+// Keypress focus input
+rambl.directive('keyFocus', function() {
+	return {
+		restrict: 'A',
+		link: function(scope, elem, attrs) {
+			elem.bind('keydown', function (e) {
+				elem.find('input').focus();
+			});
+		}
+	};
+});
